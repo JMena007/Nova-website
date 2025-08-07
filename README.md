@@ -1,9 +1,9 @@
 # Nova-website
-Página web en prueba 
+
 <!-- 
 ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT 
 -->
-<!Inicio del Cuerpo html>
+
 <html lang="en">
 
 <head>
