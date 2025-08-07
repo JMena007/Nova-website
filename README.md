@@ -37,6 +37,21 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
       Llamar Ahora 📲
     </button>
   </a>
+  <style>
+  .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+<a href="https://wa.me/50586953946" target="_blank">
+  <button class="whatsapp-btn">Enviar WhatsApp</button>
+</a>
 
   <script src="script.js"></script>
 </body>
