@@ -50,7 +50,7 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
   }
 </style>
 <a href="https://wa.me/50586953946" target="_blank">
-  <button class="whatsapp-btn">Enviar WhatsApp</button>
+  <button class="whatsapp-btn">WhatsApp</button>
 </a>
 
   <script src="script.js"></script>
