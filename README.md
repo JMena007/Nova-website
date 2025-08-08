@@ -69,7 +69,7 @@ PASOS PARA MEJORAR TU NEGOCIO EN EL MUNDO DEL MARKETING DIGITAL
   <button class="whatsapp-btn">WhatsApp</button>
 </a>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<a href="https://www.facebook.com/Josue" target="_blank" style="text-decoration: none;">
+<a href="https://www.facebook.com/profile.php?id=100071725347020 " target="_blank" style="text-decoration: none;">
   <button style="background-color: #3b5998; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
     <i class="fab fa-facebook-f"></i> Facebook
   </button>
