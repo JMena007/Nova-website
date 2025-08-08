@@ -23,6 +23,7 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
     <!-- Aqui comienzo a crear una lista ordenada de pasos usando la etiqueta OL -->
   </h2>
 PASOS PARA MEJORAR TU NEGOCIO EN EL MUNDO DEL MARKETING DIGITAL 
+  <p></p>
   <ol>
     <li>Define tu público objetivo y tus metas claras.</li>
     <li>Diseña una página web atractiva, rápida y adaptada a móviles y Computadoras.</li>
