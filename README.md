@@ -22,9 +22,8 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
     Orientado para mejorar tu Imagen de Negocio en el mundo Digital☺️ 
     <!-- Aqui comienzo a crear una lista ordenada de pasos usando la etiqueta OL -->
   </h2>
-  Pasos para tener una página web exitosa con Marketing Digital
+PASOS PARA MEJORAR TU NEGOCIO EN EL MUNDO DEL MARKETING DIGITAL 
   <ol>
-    <h3>
     <li>Define tu público objetivo y tus metas claras.</li>
     <li>Diseña una página web atractiva, rápida y adaptada a móviles y Computadoras.</li>
     <li>Optimiza tu contenido para SEO (motores de búsqueda).</li>
@@ -35,8 +34,8 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
     <li>Analiza las estadísticas de tu sitio con herramientas como Google Analytics.</li>
     <li>Mejora constantemente tu sitio según los datos y comentarios.</li>
     <li>Ofrece atención al cliente efectiva (WhatsApp, correo, chat en vivo).</li>
-  </ol>
-    </h3>
+  
+    
   <h3>
     📞👇🏻 
   </h3>
