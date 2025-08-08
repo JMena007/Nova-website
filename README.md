@@ -69,9 +69,7 @@ PASOS PARA MEJORAR TU NEGOCIO EN EL MUNDO DEL MARKETING DIGITAL
 </a>
 
   <script src="script.js"></script>
-</body>
 
-</html>
 
 
 
