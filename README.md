@@ -77,7 +77,7 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
 </a>
 <style>
   body {
-    backround-color: pink;
+    background-color: skyblue;
     color: #FFFFFF;
     margin: 40px;
   } 
@@ -101,10 +101,12 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
             height: 100%;
             z-index: -1;
         }
+  }
     </style>    
     
   <script src="script.js"></script>
-
+</body>
+</html>
 
 
 
