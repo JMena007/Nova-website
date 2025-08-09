@@ -74,6 +74,12 @@ PASOS PARA MEJORAR TU NEGOCIO EN EL MUNDO DEL MARKETING DIGITAL
     <i class="fab fa-facebook-f"></i> Facebook
   </button>
 </a>
+<style>
+  body {
+    background-color: pink;
+    color: #FFFFFF;
+  }
+</style>
   <script src="script.js"></script>
 
 
