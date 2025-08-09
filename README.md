@@ -17,12 +17,12 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
   <h1>
     BIENVENIDOS A NOVA 🧑🏻‍💻
   </h1>
-  <h2>
+  <h2 title="subtitulo de la Web">
     Una Pagina donde encuentras los mejores estilos de diseño para website.
     Orientado para mejorar tu Imagen de Negocio en el mundo Digital☺️ 
     <!-- Aqui comienzo a crear una lista ordenada de pasos usando la etiqueta OL -->
   </h2>
-PASOS PARA MEJORAR TU NEGOCIO EN EL MUNDO DEL MARKETING DIGITAL 
+ PASOS PARA MEJORAR TU NEGOCIO EN EL MUNDO DEL MARKETING DIGITAL 
   <p></p>
   <ol>
     <li>Define tu público objetivo y tus metas claras.</li>
