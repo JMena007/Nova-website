@@ -78,7 +78,9 @@ PASOS PARA MEJORAR TU NEGOCIO EN EL MUNDO DEL MARKETING DIGITAL
   body {
     background-color: pink;
     color: #FFFFFF;
-  }
+    margin: 40px;
+  } 
+  
 </style>
   <script src="script.js"></script>
 
