@@ -111,8 +111,7 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
     </style>    
     
   <script src="script.js"></script>
-</body>
-</html>
+
 
 
 
