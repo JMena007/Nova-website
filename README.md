@@ -18,6 +18,12 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
   <h1>
     BIENVENIDOS A NOVA 🧑🏻‍💻
   </h1>
+  <style>
+    h1 {
+      color: #FFFF00;
+    }
+      
+  </style>
   <h2 title="subtitulo de la Web">
     Una Pagina donde encuentras los mejores estilos de diseño para website.
     Orientado para mejorar tu Imagen de Negocio en el mundo Digital☺️ 
