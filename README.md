@@ -85,6 +85,21 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
   }
   
 </style>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1055/1055687.png");
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-position: center;  /* esto centra la imagen */
+    background-size: contain;     /* Ajustar el tamaño sin recortar */
+    background-color: #0d6efd;    /* Color Azul de fondo */
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+  }
+</style>
   <script src="script.js"></script>
 
 
