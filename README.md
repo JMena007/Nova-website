@@ -77,7 +77,7 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
 </a>
 <style>
   body {
-    backround-color: lightblue;
+    backround-color: skyblue;
     color: #FFFFFF;
     margin: 40px;
   } 
