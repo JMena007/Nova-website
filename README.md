@@ -13,7 +13,8 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
   <title>Nova</title>
 </head>
 
-<body>
+<body> 
+  <div class="marca-agua"></div>
   <h1>
     BIENVENIDOS A NOVA 🧑🏻‍💻
   </h1>
@@ -76,7 +77,7 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
 </a>
 <style>
   body {
-    background-color: pink;
+    background-color: blue;
     color: #FFFFFF;
     margin: 40px;
   } 
@@ -85,6 +86,7 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
   }
   
 </style>
+
 <style>
   body {
     .marca-agua {
@@ -100,8 +102,7 @@ ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT
             height: 100%;
             z-index: -1;
         }
-    </style>
-     <div class="marca-agua"></div>
+    </style>     
   <script src="script.js"></script>
 
 
