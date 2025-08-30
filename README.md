@@ -4,7 +4,7 @@
 ESTE ES UN BORRADOR DE EL USO BASICO DE HTML + CSS + JAVASCRIPT 
 -->
 
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
