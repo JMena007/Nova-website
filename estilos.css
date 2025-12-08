@@ -1,0 +1,39 @@
+h1 {
+  color: #0000FF;
+}
+.llamar-link {
+    display:inline-block;
+    padding:10px 20px;
+    background-color:green; 
+    color:white; 
+    text-decoration:none; 
+    border-radius:5px;
+}
+.facebook-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4267B2; /* azul Facebook */
+    color: white;               /* texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background  0.4s;
+}
+
+.facebook-link:hover {
+    background-color: #365899; /* azul más oscuro al pasar mouse */
+    color: white;
+}
+
+form {
+    width: 300px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 5px;
+}
