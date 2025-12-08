@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurriculumJM.com</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+
+    <h1>CV Josue Mena</h1>
+    
+    <p>Estudiante de la Carrera de Ingenieria En Ciencias de la Computacion (UNAN); Enfocado en el desarrollo y Arquitectura de Software.</p>
+   <nav>
+     <ul>
+        <li><a href="#atributos">Atributos personales.</a></li>
+        <li> <a href="#experiencia"><strong>Experiencias Laborales</strong> </a></li>
+        <li> <a href="#estudios">Estudios y Preparacion Tecnica</a></li>
+        <li> <a href="#contact"> Contactar con JMenadev</a></li>
+      
+     </ul>
+    </nav>
+    
+    <br> </br>
+    <section id="atributos">
+       <h2>Atributos Personales</h2>
+       <p>este es el bloque de atributos</p>
+    </section>
+    
+    <section id="experiencia">
+    <h2>Experiencias Laborales</h2>
+    <p></p>
+    </section>
+
+    <section id="estudios">
+      <h2>Estudios y Preparación Técnica</h2>
+       <p></p>
+    </section>
+    
+   <section id="Informacion">
+     <h2>Enviar Correo</h2>
+      <form action="mailto: josuemenapro@Gmail.com" method="post" enctype="text/plain">
+      
+         <fieldset>
+             <legend><strong>Informacion Personal</strong></legend>
+            <label>
+                Nombre:
+                <input type="text" name="name" placeholder="Name and lastname" required>
+            </label>
+            <label>
+                Fecha:
+                <input type="datetime-local" required>
+            </label>
+            <label> Correo:
+             <input type="email"
+             placeholder="@Correo"required>
+            </label>
+            <label> numero:
+              <input type="number" 
+              placeholder="Agrega Nº telefono" required>
+            </label>
+            <button type="submit">Enviar Info</button>
+          </fieldset>
+      </form>
+    </section>
+    <section id="contact">
+     <h3>CONTACTANOS</h3>
+
+     <a href="tel:+50586953946" class="llamar-link" onclick="alertllamar()">Lláma Aqui</a>
+     <br><br>
+
+     <a href="https://www.facebook.com/profile.php?id=100071725347020" class="facebook-link" onclick="messageFacebook()">Perfil Facebook</a>
+
+     <br><br>
+    </section>
+    <footer> <strong>Copyright 2025, CVJmenaDev</strong></footer>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
