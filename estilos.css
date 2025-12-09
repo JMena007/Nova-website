@@ -8,21 +8,24 @@ h1 {
     color:white; 
     text-decoration:none; 
     border-radius:5px;
+    margin: 5px;
 }
 .facebook-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4267B2; /* azul Facebook */
-    color: white;               /* texto blanco */
+    background-color: #4267B2; 
+    color: white;               
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
     font-size: 16px;
     transition: background  0.4s;
+    margin-bottom: 25px;
 }
 
 .facebook-link:hover {
-    background-color: #365899; /* azul más oscuro al pasar mouse */
+    background-color: #365899;
+    
     color: white;
 }
 
@@ -36,4 +39,30 @@ input {
     padding: 8px;
     margin: 6px 0;
     border-radius: 5px;
+}
+#phone {
+  margin-bottom: 25px;
+}
+
+#estudios {
+  text-align: center;
+}
+.contact-row {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+section {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
 }
