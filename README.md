@@ -57,11 +57,9 @@ Servicios externos como Formspree o Netlify Forms
 
 🌐 Visualización del sitio
 
-Si el repositorio ya está configurado con GitHub Pages, tu sitio quedará accesible en:
+El repositorio ya está configurado con GitHub Pages, El sitio aparece en el siguiente enlace:
 
 https://jmena007.github.io/Nova-website/#experiencia
-
-(Puedes actualizar este enlace cuando publiques tu web.)
 
 
 📁 Estructura del proyecto
