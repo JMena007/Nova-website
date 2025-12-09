@@ -4,8 +4,6 @@ Este es un proyecto personal donde presento mi Curriculum Vitae en formato web. 
 El objetivo es demostrar mis habilidades en HTML, CSS y JavaScript, además de practicar buenas prácticas de desarrollo web.
 
 
----
-
 🚀 Características del proyecto
 
 Estructura HTML semántica.
@@ -22,8 +20,6 @@ Preparado para desplegarse en GitHub Pages.
 
 
 
----
-
 🧱 Tecnologías utilizadas
 
 HTML5
@@ -35,8 +31,6 @@ JavaScript
 Git & GitHub (para gestión del proyecto)
 
 
-
----
 
 📬 Formulario de Contacto
 
@@ -61,18 +55,14 @@ Servicios externos como Formspree o Netlify Forms
 
 
 
----
-
 🌐 Visualización del sitio
 
 Si el repositorio ya está configurado con GitHub Pages, tu sitio quedará accesible en:
 
-https://<tu-usuario>.github.io/<tu-repositorio>/
+https://jmena007.github.io/Nova-website/#experiencia
 
 (Puedes actualizar este enlace cuando publiques tu web.)
 
-
----
 
 📁 Estructura del proyecto
 
@@ -82,8 +72,6 @@ https://<tu-usuario>.github.io/<tu-repositorio>/
 |-- funciones.js
 |-- README.md
 
-
----
 
 🧑‍💻 Autor
 
