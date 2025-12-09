@@ -1,7 +1,7 @@
 CurriculumJM — Portfolio Web de Josué Mena
 
 Este es un proyecto personal donde presento mi Curriculum Vitae en formato web. Incluye mis atributos personales, experiencia laboral, preparación académica y un formulario de contacto básico.
-El objetivo es demostrar mis habilidades en HTML, CSS y JavaScript, además de practicar buenas prácticas de desarrollo web.
+El objetivo es demostrar mis habilidades en HTML, CSS y JavaScript, además de tener buenas prácticas Semánticas en el desarrollo web.
 
 
 🚀 Características del proyecto
