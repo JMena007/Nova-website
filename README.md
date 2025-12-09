@@ -66,8 +66,9 @@ https://jmena007.github.io/Nova-website/#experiencia
 
 /
 |-- index.html
-|-- Estilo.css
+|-- estilo.css
 |-- funciones.js
+|-- exitalert.js
 |-- README.md
 
 
