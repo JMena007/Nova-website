@@ -1,34 +1,41 @@
-h1 {
-  color: #0000FF;
-}
-.llamar-link {
-    display:inline-block;
-    padding:10px 20px;
-    background-color:green; 
-    color:white; 
-    text-decoration:none; 
-    border-radius:5px;
-    margin: 5px;
-}
-.facebook-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4267B2; 
-    color: white;               
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background  0.4s;
-    margin-bottom: 25px;
-}
-
-.facebook-link:hover {
-    background-color: #365899;
-    
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #3a1c71, #6a3093, #8e44ad);
+    min-height: 100vh;
     color: white;
+    font-family: Arial, sans-serif;
 }
 
+/* Encabezados */
+h1 {
+    color: #e2c8ff;
+    transition: color 0.3s ease;
+}
+
+h1.scrolled {
+    color: #8b6fcf;
+}
+
+/* Navegación */
+#lista {
+    padding: 20px 0;
+}
+
+/* Secciones */
+section {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+#estudios {
+    text-align: center;
+}
+
+/* Formulario */
 form {
     width: 300px;
     margin: 20px auto;
@@ -40,29 +47,97 @@ input {
     margin: 6px 0;
     border-radius: 5px;
 }
-#phone {
-  margin-bottom: 25px;
+
+/* Botones de envío y reset */
+#clean {
+    margin: 10px;
 }
 
-#estudios {
-  text-align: center;
-}
+/* Contactos y enlaces */
 .contact-row {
-  display: flex;
-  justify-items: space-between;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 25px;
-}
-section {
-  width: 90%;
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 25px;
 }
 
+#phone {
+    margin-bottom: 25px;
+}
+
+/* Links personalizados */
+a {
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: #1ebe5d; /* verde más claro opcional */
+}
+
+a:active {
+    color: white;
+}
+
+/* Botones de contacto */
+.llamar-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+
+.facebook-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4267B2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.4s;
+    margin-bottom: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.facebook-link:hover {
+    background-color: #365899;
+}
+
+.whats-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.4s;
+    margin-bottom: 25px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* Footer */
 footer {
-  text-align: center;
-  margin-top: 30px;
-  padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
 }
