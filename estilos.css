@@ -1,42 +1,64 @@
-/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #3a1c71, #6a3093, #8e44ad);
     min-height: 100vh;
-    color: white;
-    font-family: Arial, sans-serif;
+    color: white; 
 }
 
-/* Encabezados */
 h1 {
-    color: #e2c8ff;
-    transition: color 0.3s ease;
-    text-align: center;
+  color: blue;
 }
 
-h1.scrolled {
-    color: #8b6fcf;
+.llamar-link {
+    display:inline-block;
+    padding:10px 20px;
+    background-color:green; 
+    color:white; 
+    text-decoration:none; 
+    border-radius:5px;
+    margin: 5px;
+    font-weight: bold ;
+    width: 100px;
 }
 
-/* Navegación */
-#lista {
-    padding: 20px 0;
+.facebook-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4267B2; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.4s;
+    margin-bottom: 25px;
+    width: 100px;
+    justify-content: center;
 }
 
-/* Secciones */
-section {
-    width: 90%;
-    max-width: 700px;
-    margin: auto;
-    line-height: 1.5;
+.facebook-link:hover {
+    background-color: #365899;
 }
 
-#estudios {
-    text-align: center;
+.whats-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.4s;
+    margin-bottom: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+   align-items: center; 
+   width: 100px;
 }
 
-/* Formulario */
 form {
     width: 300px;
     margin: 20px auto;
@@ -49,96 +71,96 @@ input {
     border-radius: 5px;
 }
 
-/* Botones de envío y reset */
-#clean {
-    margin: 10px;
-}
-
-/* Contactos y enlaces */
-.contact-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 25px;
-}
-
 #phone {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
-/* Links personalizados */
-a {
-    color: yellow;
-    text-decoration: none;
+#estudios {
+  text-align: center;
+}
+
+.contact-row {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+section {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+#lista {
+   padding: 20px 0;
+}
+
+#header {
+    color: #e2c8ff;  
     transition: color 0.3s ease;
+    text-align: center;
+}
+
+#header.scrolled {
+    color: #8b6fcf; 
+}
+#clean {
+  margin: 10px;
+}
+
+/*color de los links*/
+a {
+    color: yellow; 
+    text-decoration: none;
 }
 
 a:visited {
-    color: yellow;
+    color: yellow; 
 }
 
 a:hover {
-    color: #1ebe5d; /* verde más claro opcional */
+    color: #1ebe5d; /* un verde más claro opcional */
 }
 
 a:active {
     color: white;
 }
 
-/* Botones de contacto */
-.llamar-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
-    font-weight: bold;
-    width: 100px;
-    text-align: center;
+#vision {
+  text-align: left;
+  padding-left: 16px;
+  padding-right: 32px;
 }
 
-.facebook-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4267B2;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background 0.4s;
-    margin-bottom: 25px;
-    width: 100px;
-    text-align: center;
+#ex li {
+  margin: 10px;
+  line-height: 1.8;
 }
 
-.facebook-link:hover {
-    background-color: #365899;
+.est li {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
-.whats-link {
-    display: flex;
-    justify-content: center;
+#lista ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  #lista ul {
+    flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #25D366;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background 0.4s;
-    margin-bottom: 25px;
-    width: 100px;
-    margin: 0 auto;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px;
+  }
 }
