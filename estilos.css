@@ -104,7 +104,7 @@ footer {
    padding: 20px 0;
 }
 
-#header {
+#enc {
     color: #e2c8ff;  
     transition: color 0.3s ease;
     text-align: center;
@@ -163,4 +163,18 @@ a:active {
     flex-direction: column;
     align-items: center;
   }
+}
+
+
+#enc {
+  text-align: center;
+    position: fixed; /* Se queda mientras navegas */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg); /* Centrado y rotado */
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.2); /* Transparente */
+    pointer-events: none; /* Para que no interfiera con clics */
+    z-index: 9999;
+    white-space: nowrap;
 }
