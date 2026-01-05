@@ -3,9 +3,12 @@ body {
     padding: 0;
     background: linear-gradient(to bottom, #3a1c71, #6a3093, #8e44ad);
     min-height: 100vh;
-    color: white; 
+    color: white;
 }
-
+
+.parrafo {
+  text-align: center;
+}
 
 .llamar-link {
     display:inline-block;
@@ -73,6 +76,10 @@ input {
 }
 
 #estudios {
+  text-align: 0px;
+}
+
+.tit {
   text-align: center;
 }
 
