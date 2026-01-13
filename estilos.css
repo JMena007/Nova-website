@@ -1,9 +1,41 @@
+.side-header {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ← a la derecha DE VERDAD */
+  height: 64px;
+  padding: 35px;
+ /* padding: 0 16px; *//* padding profesional lateral */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #3a1c71, #6a3093, #8e44ad);
+    background: linear-gradient(to bottom, #ffffff,  /* blanco arriba */
+    #dbe7ff,  /* azul muy clarito */
+    #a6c4ff,  /* azul claro */
+    #4a90e2,  /* azul medio */
+    #1e3a8a); 
     min-height: 100vh;
-    color: white;
+    color: black;
 }
 
 .parrafo {
@@ -19,7 +51,7 @@ body {
     border-radius:5px;
     margin: 5px;
     font-weight: bold ;
-    width: 100px;
+    width: 90px;
 }
 
 .facebook-link {
@@ -33,7 +65,7 @@ body {
     font-size: 16px;
     transition: background 0.4s;
     margin-bottom: 25px;
-    width: 100px;
+    width: 90px;
     justify-content: center;
 }
 
@@ -51,12 +83,26 @@ body {
     border-radius: 6px;
     font-size: 16px;
     transition: background 0.4s;
-    margin-bottom: 25px;
-    margin: 0 auto;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 90px;
+  /*margin: 0 auto;
     display: flex;
     justify-content: center; 
    align-items: center; 
-   width: 100px;
+   width: 100px;*/
+}
+.github-link {
+  display:inline-block;
+    padding:10px 20px;
+    background-color:black; 
+    color:white; 
+    text-decoration:none;
+    text-align: center;
+    border-radius:5px;
+    margin: 5px;
+    font-weight: bold ;
+    width: 90px;
 }
 
 form {
@@ -77,6 +123,7 @@ input {
 
 #estudios {
   text-align: 0px;
+  margin-top: 80px;
 }
 
 .tit {
@@ -109,7 +156,11 @@ footer {
 }
 
 #titulo {
-    color: #e2c8ff;  
+   margin-left: 0px; /* hacia derecha */
+   margin-bottom: 10px; /* hacia abajo*/
+   margin-right: 0px; /* hacia Izquierda*/
+   margin-top: 40px; /* arriba*/
+    color: black;  
     transition: color 0.3s ease;
     text-align: center;
 }
@@ -123,12 +174,12 @@ footer {
 
 /*color de los links*/
 a {
-    color: yellow; 
+    color: white; 
     text-decoration: none;
 }
 
 a:visited {
-    color: yellow; 
+    color: white; 
 }
 
 a:hover {
@@ -143,6 +194,7 @@ a:active {
   text-align: left;
   padding-left: 16px;
   padding-right: 32px;
+  text-align: center;
 }
 
 #ex li {
@@ -155,11 +207,21 @@ a:active {
   line-height: 1.6;
 }
 
+.dist {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #facc15;
+}
+
 #lista ul {
   display: flex;
   gap: 10px;
   justify-content: center;
   padding: 0;
+}
+
+#lista.show {
+  display: block;
 }
 
 @media (max-width: 600px) {
@@ -180,4 +242,49 @@ a:active {
     pointer-events: none; /* Para que no interfiera con clics */
     z-index: 9999;
     white-space: nowrap;
+}
+
+/* boton hamburguesa*/
+/* Ocultar menú en móvil por defecto */
+@media (max-width: 768px) {
+  #lista {
+    display: none;           /* oculto */
+    flex-direction: column;  /* columnas al desplegar */
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;      /* encima del contenido */
+    top: 64px;               /* debajo del header */
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  #lista.show {
+    display: flex;           /* se muestra al hacer click */
+  }
+
+  #lista ul {
+    flex-direction: column;  /* lista vertical */
+    padding: 0;
+    margin: 0;
+  }
+
+  #lista li {
+    margin: 1px 0;
+  }
+}
+
+#lista {
+  transition: all 0.30s ease;
+}
+#footer{
+  color: white;
+  border: 20px;
+  background-color: black;
+  
+}
+
+#exp {
+  text-align: center;
+  margin-left: 20px;
 }
