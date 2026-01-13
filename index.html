@@ -7,19 +7,29 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+ 
+ <main>
+   <header id="header" class="side-header">
+      <div class="header-inner">
+         <div class="logo"> Portafolio JMenaDEV </div> 
+       <button class="menu-btn" aria-label="Abrir menú">☰</button>
+       </div>
+    </div>
+  </header>
   
-  <header id="enc"> JMenadev</header>
+  <div id="enc"> JMenadev </div>
+  <div class="flotante"> <button class="return-btn"> ^</button></div>
 
-    <h1 id="titulo">CV Josué Mena</h1>
+    <h1 id="titulo">Josué Isaias Mena Flores</h1>
     
     <p class="parrafo">Estudiante de la Carrera de Ingeniería En Ciencias de la Computación (UNAN); Enfocado en el desarrollo y Arquitectura de Software.</p>
+    
    <nav id="lista">
      <ul>
         <li><a href="#vision">Atributos Profesionales</a></li>
-        <li> <a href="#experiencia"><strong>Experiencias Laborales</strong> </a></li>
+        <li> <a href="#experiencia" ><strong>Experiencias Laborales</strong> </a></li>
         <li> <a href="#estudios">Mi  Preparación Tecnica</a></li>
         <li> <a href="#contact"> Contactar con JMenadev</a></li>
-      
      </ul>
     </nav>
     
@@ -29,7 +39,7 @@
     </section>
     
     <section id="experiencia">
-    <h2>Experiencias Laborales</h2>
+    <h2 id="exp">Experiencias Laborales</h2>
       <ul id="ex" >
          <li>	Salón de belleza Marichel (2022–2023)</li>
         <li>Ventas de zapatos (abril–diciembre 2023)</li>
@@ -39,14 +49,14 @@
          <li >	Actualmente: Vendedor en el mercado Iván Montenegro</li>
       </ul>
     </section>
-
+    
     <section id="estudios">
        
          <h2 class="tit"> Estudios y Preparación Técnica</h2>
        <ul class="est">
          <li><strong>	Estudios Secundarios</strong>: Instituto Enrique Flores Guevara (Bachiller)</li>
-         <li>	<strong>Estudios Técnicos: Tecnológico Nacional Simón Bolívar</strong><br>
-          — Reparación y Mantenimiento de Cómputos, Sistemas Operativos y Ofimática, Excel Avanzado</li>
+         	<p class="dist"><strong> "Estudios Técnicos: Tecnológico Nacional Simón Bolívar"</strong> </p>
+          <li>Reparación y Mantenimiento de Cómputos, Sistemas Operativos y Ofimática, Excel Avanzado</li>
          <li> <strong>Internacional:</strong>	Curso Desarrollo de Software con IA (Mouredev, España)</li> 
          <li> <strong>	Nivel Académico Actual: Estudiante de Ingeniería en Computación | Técnico en Mantenimiento y Ofimática — UNAN Managua  </strong></li>
       </ul>
@@ -73,28 +83,33 @@
             </label>
             <label> numero:
               <input type="number" 
-              placeholder="Agrega Nº telefono" required>
+              placeholder="Ej: 8859 ****" required>
             </label>
             <button type="submit">Enviar Info</button>
             <button id="clean"type="reset"> Limpiar</button>
           </fieldset>
+         
       </form>
     </section>
       <section id="contact">
        <h3>CONTACTANOS</h3>
        <div class="contact-row">
           <div id="phone">
-           <a href="tel:+50586953946" class="llamar-link" onclick="alertllamar()">Lláma Aqui</a>
-            </div>
-        <div>
-          <a href="https://www.facebook.com/profile.php?id=100071725347020" class="facebook-link" onclick="messageFacebook()"> Facebook</a> 
+             <a href="tel:+50586953946" class="llamar-link" onclick="alertllamar()">Llamada</a>
+            <a href="https://www.facebook.com/profile.php?id=100071725347020" class="facebook-link" onclick="messageFacebook()"> Facebook</a> 
          </div>
         </div>
-        <div> 
+        <div class="2btn">
         <a href="https://wa.me/+5058695-3946" class="whats-link" onclick="contactws()">WhatsApp</a>
+        
+          <a href="https://github.com/JMena007" class="github-link">GitHub</a>
         </div>
       </section>
-    <footer><strong>@Copyright 2025, CVJmenaDev</strong></footer>
+     
+      <footer id="footer"><strong>
+        <p>Copyright 2025, CVJmenaDev</p></strong>
+      </footer>
+     
     
 
     <script src="funciones.js"></script>
@@ -104,5 +119,6 @@
         console.log("scrollY:", window.scrollY);
          });
     </script>
+  </main>
 </body>
 </html>
