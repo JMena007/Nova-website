@@ -31,3 +31,4 @@ const returnBtn = document.querySelector(".return-btn");
 returnBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
