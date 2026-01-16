@@ -32,3 +32,16 @@ returnBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+// caja de comenarios
+const textarea = document.querySelector("textarea");
+
+textarea.addEventListener("input", () => {
+  const length = textarea.value.length;
+
+  if (length > 200) {
+    textarea.style.fontSize = "14px";
+  } else {
+    textarea.style.fontSize = "16px";
+  }
+});
+
