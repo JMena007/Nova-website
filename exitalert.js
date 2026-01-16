@@ -1,8 +1,10 @@
-
 function confirmarSalida(e) {
     e.preventDefault();
     e.returnValue = "";
 }
+ window.addEventListener("scroll", () => {
+      console.log("scrollY:", window.scrollY);
+    });
 //bienvenida
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash");
@@ -39,6 +41,24 @@ btnTop.addEventListener("click", () => {
       top: 0,
       behavior: "smooth"
     });
+});
+
+// boton enviar comentario por whatsaap
+document.getElementById("btn-comentario").addEventListener("click", function () {
+  const comentario = document.getElementById("comentario").value;
+
+  if (comentario.trim() === "") {
+    alert("Escribe un comentario antes de enviar");
+    return;
+  }
+
+  const telefono = "50586953946";
+  const mensaje = encodeURIComponent(
+    "Comentario desde el sitio:\n" + comentario
+  );
+
+  const url = `https://wa.me/${+50586953946}?text=${mensaje}`;
+  window.open(url, "_blank");
 });
 
 
