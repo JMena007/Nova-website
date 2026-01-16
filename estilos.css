@@ -1,7 +1,9 @@
+
 /* Arreglo error web*/
 html, body { 
   overflow-x: hidden;
-} 
+}
+ 
 
 .side-header {
   background-color: #1e3a8a;
@@ -53,10 +55,11 @@ body {
     background-color:green; 
     color:white; 
     text-decoration:none; 
-    border-radius:5px;
+    border-radius:6px;
     margin: 5px;
     font-weight: bold ;
-    width: 90px;
+    width: 95px;
+    text-align: center;
 }
 
 .facebook-link {
@@ -70,8 +73,9 @@ body {
     font-size: 16px;
     transition: background 0.4s;
     margin-bottom: 25px;
-    width: 90px;
+    width: 95px;
     justify-content: center;
+    text-align: center;
 }
 
 .facebook-link:hover {
@@ -90,7 +94,7 @@ body {
     transition: background 0.4s;
     margin-left: 30px;
     margin-bottom: 30px;
-    width: 90px;
+    width: 95px;
   /*margin: 0 auto;
     display: flex;
     justify-content: center; 
@@ -104,10 +108,10 @@ body {
     color:white; 
     text-decoration:none;
     text-align: center;
-    border-radius:5px;
+    border-radius:6px;
     margin: 5px;
     font-weight: bold ;
-    width: 90px;
+    width: 95px;
 }
 
 form {
@@ -115,11 +119,15 @@ form {
     margin: 20px auto;
 }
 
-input {
-    width: 100%;
+/* aplica a todos los inputs */
+input{
+    width: 90%; /* ancho */
+  /*  height: ; altura */
     padding: 8px;
     margin: 6px 0;
+    margin-right: 100px;
     border-radius: 5px;
+    border-color: white;
 }
 
 #phone {
@@ -359,6 +367,25 @@ a:active {
 .return-btn:hover {
   transform: scale(1.1);
 }
+/* boton enviar comentario */
+#comentario {
+  width: 60%;
+  min-height: 30px;
+  resize: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#btn-comentario {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #25D366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
   
   
+
   
