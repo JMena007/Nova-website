@@ -5,6 +5,7 @@ function confirmarSalida(e) {
  window.addEventListener("scroll", () => {
       console.log("scrollY:", window.scrollY);
     });
+    
 //bienvenida
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash");
@@ -12,18 +13,15 @@ window.addEventListener("load", () => {
 
   if (!splash || !contenido) return;
 
-  // aseguramos que el splash se renderice primero
-  requestAnimationFrame(() => {
-    setTimeout(() => {
-      splash.classList.add("fade-out");
+  setTimeout(() => {
+    splash.classList.add("fade-out");
 
-      setTimeout(() => {
-        splash.style.display = "none";
-        contenido.classList.remove("hidden");
-      }, 1000);
-    }, 1800);
-  });
-});
+    setTimeout(() => {
+      splash.style.display = "none";
+      contenido.classList.add("show");
+    }, 600);
+  }, 1800);
+});// fin de Bienvenida
 
 //boton flotante
  const btnTop = document.getElementById("btnTop");
@@ -57,7 +55,7 @@ document.getElementById("btn-comentario").addEventListener("click", function () 
     "Comentario desde el sitio:\n" + comentario
   );
 
-  const url = `https://wa.me/${+50586953946}?text=${mensaje}`;
+  const url = `https://wa.me/${telefono}?text=${mensaje}`;
   window.open(url, "_blank");
 });
 
