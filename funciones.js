@@ -5,7 +5,7 @@ function messageFacebook () {
 function alertllamar () {
   alert("Presiona aceptar para llamar");
 }
-function contactws () {
+function contacts () {
   alert("toca Aceptar para dirijirse al Whatsaap");
 }
 
@@ -25,6 +25,7 @@ const menu = document.querySelector("#lista");
 btn.addEventListener("click", () => {
   menu.classList.toggle("show");
 });
+
 //Agragar boton para regresar al.incio o arriba
 const returnBtn = document.querySelector(".return-btn");
 
