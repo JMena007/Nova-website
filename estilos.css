@@ -1,5 +1,5 @@
 
-/* cuerpo del documento */
+/* inicio */
 html, body { 
   overflow-x: hidden;
 }
@@ -269,7 +269,7 @@ a:active {
     flex-direction: column;  /* columnas al desplegar */
     background-color: rgba(0,0,0,0.9);
     position: absolute;      /* encima del contenido */
-    top: 64px;               /* debajo del header */
+    top: 80px;               /* debajo del header */
     right: 0;
     width: 200px;
     padding: 10px;
@@ -288,15 +288,17 @@ a:active {
 
   #lista li {
     margin: 1px 0;
+    
   }
 }
 
 #lista {
   transition: all 0.30s ease;
+  
 }
 #footer{
   color: white;
-  border: 20px;
+  border: 40px;
   background-color: black;
   
 }
@@ -307,7 +309,7 @@ a:active {
 }
 
 /* bienvenida */
-#splash {
+  #splash {
   position: fixed;
   color: #1e3a8a;
   inset: 0;
@@ -316,23 +318,26 @@ a:active {
   align-items: center;
   justify-content: center;
   z-index: 99999;
-
   opacity: 1;                 /* ← ESTO FALTABA */
-  transition: opacity 0.5s ease;
+  transition: opacity 0.6s ease;
+}  
+#contenido {
+  opacity: 0;
+  transition: opacity 0.6s ease;
 }
 
-.fade-out {
-  opacity: 0;
+#contenido.show {
+  opacity: 1;
 }
 
 .hidden {
-  display: none;
+  display: block; /* ← CAMBIO CLAVE */
 }
-
+ 
 #question {
   margin: 20px;
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 60px;
+  margin-top: 35px;
 }
 
 /* boton flotante*/
@@ -359,7 +364,7 @@ a:active {
   height: 45px;
   border-radius: 50%;
   border: none;
-  background-color: #5DADE2;
+  background-color: #5DADE6;
   color: #ffffff;
   
   font-size: 22px;
@@ -378,10 +383,12 @@ a:active {
   resize: none;
   padding: 10px;
   border-radius: 6px;
+  margin-left: 30px;
 }
 
 #btn-comentario {
   margin-top: 10px;
+  margin-left: 30px;
   padding: 10px;
   border-radius: 6px;
   background: #25D366;
