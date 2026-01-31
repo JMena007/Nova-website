@@ -1,408 +1,247 @@
-
-/* inicio */
-html, body { 
-  overflow-x: hidden;
+/* =====================
+   BASE / RESET
+===================== */
+html, body {
+    overflow-x: hidden; /* Evita scroll horizontal */
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
 }
- 
 
+/* =====================
+   BODY / BACKGROUND
+===================== */
+body {
+    min-height: 100vh;
+    color: black;
+    background: linear-gradient(
+        to bottom, 
+        #ffffff,   /* blanco arriba */
+        #dbe7ff,   /* azul clarito */
+        #a6c4ff    /* azul claro */
+    );
+}
+
+/* =====================
+   SPLASH / BIENVENIDA
+===================== */
+#splash {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    color: #1e3a8a;
+    z-index: 99999;
+    opacity: 1;  /* visibilidad inicial */
+    transition: opacity 0.6s ease;
+}
+
+#contenido {
+    opacity: 0; /* oculto hasta que desaparece splash */
+    transition: opacity 0.6s ease;
+}
+
+#contenido.show {
+    opacity: 1;
+}
+
+/* =====================
+   HEADER
+===================== */
 .side-header {
-  background-color: #1e3a8a;
-  color: white;
+    background-color: #1e3a8a;
+    color: white;
 }
 
 .header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* ← a la derecha DE VERDAD */
-  height: 64px;
-  padding: 35px;
- /* padding: 0 16px; *//* padding profesional lateral */
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda, btn a la derecha */
+    align-items: center;
+    padding: 35px;
+    height: 64px;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .menu-btn {
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 1.8rem;
-  cursor: pointer;
-  
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #ffffff,  /* blanco arriba */
-    #dbe7ff,  /* azul muy clarito */
-    #a6c4ff,  /* azul claro */
-    #4a90e2,  /* azul medio */
-    #1e3a8a); 
-    min-height: 100vh;
-    color: black;
-}
-
-.parrafo {
-  text-align: center;
-}
-
-.llamar-link {
-    display:inline-block;
-    padding:10px 20px;
-    background-color:green; 
-    color:white; 
-    text-decoration:none; 
-    border-radius:6px;
-    margin: 5px;
-    font-weight: bold ;
-    width: 95px;
-    text-align: center;
-}
-
-.facebook-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4267B2; 
+    background: transparent;
+    border: none;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background 0.4s;
-    margin-bottom: 25px;
-    width: 95px;
-    justify-content: center;
-    text-align: center;
+    font-size: 1.8rem;
+    cursor: pointer;
 }
 
-.facebook-link:hover {
-    background-color: #365899;
-}
-
-.whats-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #25D366; 
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background 0.4s;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    width: 95px;
-  /*margin: 0 auto;
-    display: flex;
-    justify-content: center; 
-   align-items: center; 
-   width: 100px;*/
-}
-.github-link {
-  display:inline-block;
-    padding:10px 20px;
-    background-color:black; 
-    color:white; 
-    text-decoration:none;
-    text-align: center;
-    border-radius:6px;
-    margin: 5px;
-    font-weight: bold ;
-    width: 95px;
-}
-
-form {
-    width: 300px;
-    margin: 20px auto;
-}
-
-/* aplica a todos los inputs */
-input{
-    width: 90%; /* ancho */
-  /*  height: ; altura */
-    padding: 8px;
-    margin: 6px 0;
-    margin-right: 100px;
-    border-radius: 5px;
-    border-color: white;
-}
-
-#phone {
-  margin-bottom: 25px;
-}
-
-#estudios {
-  text-align: 0px;
-  margin-top: 80px;
-}
-
-.tit {
-  text-align: center;
-}
-
-.contact-row {
-  display: flex;
-  justify-items: space-between;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 25px;
-}
-
-section {
-  width: 90%;
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.5;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  padding: 10px;
-}
-
+/* =====================
+   NAV / MENÚ DESPLEGABLE
+===================== */
 #lista {
-   padding: 20px 0;
-}
-
-#titulo {
-   margin-left: 0px; /* hacia derecha */
-   margin-bottom: 10px; /* hacia abajo*/
-   margin-right: 0px; /* hacia Izquierda*/
-   margin-top: 40px; /* arriba*/
-    color: black;  
-    transition: color 0.3s ease;
-    text-align: center;
-}
-
-.title {
-  text-align: center;
-}
-
-#header.scrolled {
-    color: #8b6fcf; 
-}
-#clean {
-  margin: 10px;
-}
-
-/*color de los links*/
-a {
-    color: white; 
-    text-decoration: none;
-}
-
-a:visited {
-    color: white; 
-}
-
-a:hover {
-    color: #1ebe5d; /* un verde más claro opcional */
-}
-
-a:active {
-    color: white;
-}
-
-#vision {
-  text-align: left;
-  padding-left: 16px;
-  padding-right: 32px;
-  text-align: center;
-}
-
-#ex li {
-  margin: 10px;
-  line-height: 1.8;
-}
-
-.est li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-.dist {
-  margin-top: 40px;
-  font-size: 20px;
-  color: black;
-}
-
-#lista ul {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  padding: 0;
-}
-
-#lista.show {
-  display: block;
-}
-
-@media (max-width: 600px) {
-  #lista ul {
+    display: none; /* oculto por defecto */
     flex-direction: column;
-    align-items: center;
-  }
-}
-
-#enc {
-  text-align: center;
-    position: fixed; /* Se queda mientras navegas */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-30deg); /* Centrado y rotado */
-    font-size: 50px;
-    color: rgba(0, 0, 0, 0.2); /* Transparente */
-    pointer-events: none; /* Para que no interfiera con clics */
-    z-index: 9999;
-    white-space: nowrap;
-}
-
-/* boton hamburguesa*/
-/* Ocultar menú en móvil por defecto */
-@media (max-width: 768px) {
-  #lista {
-    display: none;           /* oculto */
-    flex-direction: column;  /* columnas al desplegar */
-    background-color: rgba(0,0,0,0.9);
-    position: absolute;      /* encima del contenido */
-    top: 80px;               /* debajo del header */
+    background-color: rgba(0,0,0,0.9); /* fondo menú móvil */
+    position: absolute;
+    top: 80px; /* justo debajo del header */
     right: 0;
     width: 200px;
     padding: 10px;
     border-radius: 6px;
-  }
+    color: white;
+    transition: all 0.3s ease;
+}
 
-  #lista.show {
-    display: flex;           /* se muestra al hacer click */
-  }
+#lista.show {
+    display: flex; /* se muestra al hacer click en hamburguesa */
+}
 
-  #lista ul {
-    flex-direction: column;  /* lista vertical */
+#lista ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
     padding: 0;
+    list-style: none;
+}
+
+#lista li {
     margin: 0;
-  }
-
-  #lista li {
-    margin: 1px 0;
-    
-  }
 }
 
-#lista {
-  transition: all 0.30s ease;
-  
-}
-#footer{
-  color: white;
-  border: 40px;
-  background-color: black;
-  
+#lista a {
+    color: white;
+    text-decoration: none;
 }
 
-#exp {
-  text-align: center;
-  margin-left: 20px;
+/* =====================
+   MARCA DE AGUA
+===================== */
+#enc {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 9999;
+    white-space: nowrap;
+    text-align: center;
 }
 
-/* bienvenida */
-  #splash {
-  position: fixed;
-  color: #1e3a8a;
-  inset: 0;
-  background: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 99999;
-  opacity: 1;                 /* ← ESTO FALTABA */
-  transition: opacity 0.6s ease;
-}  
-#contenido {
-  opacity: 0;
-  transition: opacity 0.6s ease;
+/* =====================
+   SECCIONES PRINCIPALES
+===================== */
+section {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.5;
 }
 
-#contenido.show {
-  opacity: 1;
+#titulo {
+    margin: 40px 0 10px 0;
+    color: black;
+    text-align: center;
 }
 
-.hidden {
-  display: block; /* ← CAMBIO CLAVE */
-}
- 
-#question {
-  margin: 20px;
-  margin-bottom: 60px;
-  margin-top: 35px;
+.parrafo, .title {
+    text-align: center;
 }
 
-/* boton flotante*/
+/* =====================
+   EXPERIENCIA / ESTUDIOS
+===================== */
+#ex li, .est li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.dist {
+    margin-top: 40px;
+    font-size: 20px;
+    color: black;
+}
+
+/* =====================
+   FAQ / PREGUNTAS FRECUENTES
+===================== */
+details summary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+/* =====================
+   BOTÓN FLOTANTE / TOP
+===================== */
 .flotante {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-
-  z-index: 1000;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
 }
 
 .flotante.show {
-  opacity: 1;
-  pointer-events: auto;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .return-btn {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: none;
-  background-color: #5DADE6;
-  color: #ffffff;
-  
-  font-size: 22px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s, opacity 0.3s;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #5DADE6;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .return-btn:hover {
-  transform: scale(1.1);
-}
-/* boton enviar comentario */
-#comentario {
-  width: 60%;
-  min-height: 30px;
-  resize: none;
-  padding: 10px;
-  border-radius: 6px;
-  margin-left: 30px;
+    transform: scale(1.1);
 }
 
-#btn-comentario {
-  margin-top: 10px;
-  margin-left: 30px;
-  padding: 10px;
-  border-radius: 6px;
-  background: #25D366;
-  color: white;
-  border: none;
-  cursor: pointer;
+/* =====================
+   ESTILOS ADICIONALES
+===================== */
+a {
+    color: white;
+    text-decoration: none;
 }
- 
-/* preguntas frecuentes */
 
-summary {
-margin-bottom: 10px;
-margin-top: 10px;
+a:hover {
+    color: #1ebe5d;
 }
-  
 
-  
+#exp {
+    text-align: center;
+    margin-left: 20px;
+}
+
+/* =====================
+   MEDIA QUERIES
+===================== */
+@media (max-width: 600px) {
+    #lista ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
