@@ -1,42 +1,11 @@
-/* ==========================
-   SPLASH / BIENVENIDA
-========================== */
-window.addEventListener("load", () => {
-  const splash = document.getElementById("splash");
-  const contenido = document.getElementById("contenido");
+const splash = document.getElementById("splash");
+const contenido = document.getElementById("contenido");
 
-  if (!splash || !contenido) return;
-
-  // Si venimos desde contacto, NO mostrar splash
-  const skipSplash = sessionStorage.getItem("skipSplash");
-
-  if (skipSplash) {
-    // Mostrar contenido directo
-    splash.style.display = "none";
-    contenido.classList.add("show");
-
-    // Limpiamos la bandera
-    sessionStorage.removeItem("skipSplash");
-    return;
-  }
-
-  // Splash normal (primera vez o recarga directa)
-  setTimeout(() => {
-    splash.classList.add("fade-out");
-
-    setTimeout(() => {
-      splash.style.display = "none";
-      contenido.classList.add("show");
-    }, 600);
-  }, 1800);
-});
-
-// Desactiva restauración automática del scroll
+// Scroll siempre arriba
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
-// Fuerza ir arriba varias veces (hack necesario en GitHub Pages)
 function forceTop() {
   window.scrollTo(0, 0);
 }
@@ -45,24 +14,22 @@ window.addEventListener("load", () => {
   forceTop();
   setTimeout(forceTop, 50);
   setTimeout(forceTop, 200);
-});
 
-/* ==========================
-   ENVÍO A WHATSAPP
-========================== */
-document.getElementById("btn-comentario")?.addEventListener("click", () => {
-  const comentario = document.getElementById("comentario").value.trim();
+  const yaEntro = localStorage.getItem("yaEntro");
 
-  if (!comentario) {
-    alert("Escribe un comentario antes de enviar");
-    return;
+  if (!yaEntro) {
+    splash.style.display = "flex";
+    contenido.classList.add("hidden");
+
+    setTimeout(() => {
+      splash.style.display = "none";
+      contenido.classList.remove("hidden");
+      contenido.classList.add("show");
+      localStorage.setItem("yaEntro", "true");
+    }, 2000);
+  } else {
+    splash.style.display = "none";
+    contenido.classList.remove("hidden");
+    contenido.classList.add("show");
   }
-
-  const telefono = "50586953946";
-  const mensaje = encodeURIComponent(
-    "Comentario desde el sitio:\n" + comentario
-  );
-
-  window.open(`https://wa.me/${telefono}?text=${mensaje}`, "_blank");
 });
-
