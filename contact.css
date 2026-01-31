@@ -1,0 +1,232 @@
+/* =====================
+   RESET / BASE
+===================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* =====================
+   BODY / BACKGROUND
+===================== */
+body {
+  background: linear-gradient(to bottom, #ffffff, #dbe7ff, #4a90e2);
+  min-height: 100vh;
+  color: black;
+}
+
+/* =====================
+   SPLASH
+===================== */
+/* Splash ocupa toda la pantalla */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+#splash.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Cuando se oculta */
+#splash.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Contenido oculto al inicio */
+.hidden {
+  display: none;
+}
+
+/* =====================
+   HEADER
+===================== */
+.side-header {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* =====================
+   NAV
+===================== */
+#lista {
+  display: none; /* por defecto */
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 200px;
+  background: rgba(0,0,0,0.9);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+#lista.show {
+  display: flex;
+}
+
+#lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista li {
+  margin: 5px 0;
+}
+
+#lista a {
+  color: white;
+  text-decoration: none;
+}
+
+/* =====================
+   FORMULARIO
+===================== */
+form {
+  width: 300px;
+  margin: 20px auto;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 5px;
+  border-color: white;
+}
+
+textarea {
+  width: 60%;
+  min-height: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 30px;
+}
+
+#btn-comentario {
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #25D366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* =====================
+   CONTACTO DIRECTO
+===================== */
+
+.llamar-link {
+  display:inline-block;
+  padding:10px 20px;
+  background-color:green;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  width: 95px;
+  text-align:center;
+  
+}
+
+.facebook-link {
+  display:inline-block;
+  padding:10px 20px;
+  background-color:#4267B2;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  width:95px;
+  text-align:center;
+}
+
+.whats-link {
+  display:inline-block;
+  padding:10px 20px;
+  background-color:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  width:95px;
+  text-align:center;
+}
+
+.github-link {
+  display:inline-block;
+  padding:10px 20px;
+  background-color:black;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  width:93px;
+  text-align:center;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;           /* baja botones si no caben en móvil */
+  justify-content: center;    /* centra todo el conjunto */
+  gap: 20px;                  /* espacio entre los grupos */
+}
+
+.contact-row,
+.twobtn {
+  display: flex;
+  gap: 14px;                  /* espacio entre los botones de cada grupo */
+  margin-bottom: 20px;
+}
+
+
+/* =====================
+   FOOTER
+===================== */
+#footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* =====================
+   MEDIA QUERIES
+===================== */
+@media (max-width: 768px) {
+  #lista {
+    width: 180px;
+  }
+}
