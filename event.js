@@ -47,7 +47,7 @@ window.addEventListener("load", () => {
         if (contenido) contenido.classList.remove("hidden");
         if (contenido) contenido.classList.add("show");
         localStorage.setItem("yaEntro", "true");
-      }, 600); // coincide con transition: opacity 0.6s;
+      }, 800); // coincide con transition: opacity 0.6s;
     }, 1800);
   } else {
     // Ya entró antes, mostrar contenido directo
