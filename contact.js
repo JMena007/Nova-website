@@ -35,13 +35,13 @@ document.querySelectorAll("a").forEach(link => {
       contenido.classList.add("fade-out");
 
       // 👉 Aqui: "vengo desde contacto, no muestres splash"
-      sessionStorage.setItem("skipSplash", "true");
+      localStorage.setItem("skipSplash", "true");
 
       setTimeout(() => {
         window.location.href = href;
       }, 500);
     } else {
-      sessionStorage.setItem("skipSplash", "true");
+      localStorage.setItem("skipSplash", "true");
       window.location.href = href;
     }
   });
