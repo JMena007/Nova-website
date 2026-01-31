@@ -14,7 +14,7 @@ document.querySelectorAll("a").forEach(link => {
       return;
     }
 
-    e.preventDefault(); // detenemos navegación normal
+    e.preventDefault(); // detenemos navegación normal.
 
     const contenido = document.getElementById("contenido");
 
