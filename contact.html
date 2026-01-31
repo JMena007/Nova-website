@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | JmenaDev</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- HEADER + NAVEGACIÓN -->
+  <header class="side-header">
+    <div class="header-inner">
+      <div class="logo">JmenaDev</div>
+      <button class="menu-btn" aria-label="Abrir menú">☰</button>
+    </div>
+    <nav id="lista">
+      <ul>
+        <li><a href="Index.html" onclick="sessionStorage.setItem('volver','true')">Regresar a Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="contenido">
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="contact">
+      <h2>Enviar Correo</h2>
+
+      <form class="contact-form" method="post">
+        <fieldset>
+          <legend><strong>Formulario de Contacto</strong></legend>
+
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Nombre y apellido" required>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Fecha</label>
+            <input type="datetime-local" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="ej: @correo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Número</label>
+            <input type="number" id="phone" name="phone" placeholder="8859****" required>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit">Enviar Info</button>
+            <button type="reset" id="clean">Limpiar</button>
+          </div>
+
+        </fieldset>
+      </form>
+
+      <!-- TEXTO / COMENTARIOS -->
+      <textarea id="comentario" placeholder="Escribe tus comentarios"></textarea>
+      <button id="btn-comentario">Enviar Comentario</button>
+    </section>
+
+    <!-- CONTACTO DIRECTO -->
+    <section id="direct-contact">
+      <h3>Contáctanos</h3>
+    <div class="contact-container">
+      <div class="contact-row">
+        <div id="phone">
+          <a href="tel:+50586953946" class="llamar-link" onclick="alertllamar()">Llamada</a>
+          <a href="https://www.facebook.com/profile.php?id=100071725347020" class="facebook-link" onclick="messageFacebook()">Facebook</a>
+        </div>
+      </div>
+
+      <div class="twobtn">
+        <a href="https://wa.me/+50586953946" class="whats-link" onclick="contacts()">WhatsApp</a>
+        <a href="https://github.com/JMena007" class="github-link">GitHub</a>
+      </div>
+     </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>© 2026 JmenaDev</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="funciones.js"></script>
+  <script src="contact.js"></script>
+
+</body>
+</html>
