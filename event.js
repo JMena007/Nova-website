@@ -31,8 +31,20 @@ window.addEventListener("load", () => {
   }, 1800);
 });
 
-window.addEventListener("load", () => {
+// Desactiva restauración automática del scroll
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+// Fuerza ir arriba varias veces (hack necesario en GitHub Pages)
+function forceTop() {
   window.scrollTo(0, 0);
+}
+
+window.addEventListener("load", () => {
+  forceTop();
+  setTimeout(forceTop, 50);
+  setTimeout(forceTop, 200);
 });
 
 /* ==========================
