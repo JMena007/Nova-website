@@ -1,48 +1,61 @@
-function messageFacebook () {
-  alert("Confirma para dirigirte al perfil de JMenadev ...");
+/* ==========================
+   ALERTAS BÁSICAS
+========================== */
+function messageFacebook() {
+  alert("Confirma para dirigirte al perfil de JMenadev...");
 }
 
-function alertllamar () {
+function alertllamar() {
   alert("Presiona aceptar para llamar");
 }
-function contacts () {
-  alert("toca Aceptar para dirijirse al Whatsaap");
-}
 
-window.addEventListener("scroll", function() {
-    const header = document.getElementById("header");
+/* ==========================
+   HEADER DINÁMICO AL SCROLL
+========================== */
+window.addEventListener("scroll", () => {
+  const header = document.getElementById("header");
+  if (!header) return;
 
-    if (window.scrollY > 150) { 
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
-
-const btn = document.querySelector(".menu-btn");
-const menu = document.querySelector("#lista");
-
-btn.addEventListener("click", () => {
-  menu.classList.toggle("show");
-});
-
-//Agragar boton para regresar al.incio o arriba
-const returnBtn = document.querySelector(".return-btn");
-
-returnBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-// caja de comenarios
-const textarea = document.querySelector("textarea");
-
-textarea.addEventListener("input", () => {
-  const length = textarea.value.length;
-
-  if (length > 200) {
-    textarea.style.fontSize = "14px";
+  if (window.scrollY > 150) {
+    header.classList.add("scrolled");
   } else {
-    textarea.style.fontSize = "16px";
+    header.classList.remove("scrolled");
   }
 });
 
+/* ==========================
+   MENÚ HAMBURGUESA
+========================== */
+const btnMenu = document.querySelector(".menu-btn");
+const menu = document.getElementById("lista");
+
+if (btnMenu && menu) {
+  btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+}
+
+/* ==========================
+   BOTÓN VOLVER ARRIBA
+========================== */
+const btnTop = document.getElementById("btnTop");
+
+window.addEventListener("scroll", () => {
+  if (!btnTop) return;
+
+  btnTop.classList.toggle("show", window.scrollY > 300);
+});
+
+btnTop?.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+/* ==========================
+   TEXTAREA DINÁMICO
+========================== */
+const textarea = document.querySelector("textarea");
+
+textarea?.addEventListener("input", () => {
+  textarea.style.fontSize =
+    textarea.value.length > 200 ? "14px" : "16px";
+});
