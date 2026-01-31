@@ -26,25 +26,37 @@ body {
    SPLASH / BIENVENIDA
 ===================== */
 #splash {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f5f5f5;
-    color: #1e3a8a;
-    z-index: 99999;
-    opacity: 1;  /* visibilidad inicial */
-    transition: opacity 0.6s ease;
+  position: fixed;
+  inset: 0;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  opacity: 1;
+  color: blue;
+  transition: opacity 0.8s ease;
 }
 
+#splash.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Contenido oculto al inicio */
+.hidden {
+  display: none;
+}
+
+/* Contenido con fade */
 #contenido {
-    opacity: 0; /* oculto hasta que desaparece splash */
-    transition: opacity 0.6s ease;
+  opacity: 0;
+  transition: opacity 0.8s ease;
 }
 
 #contenido.show {
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 /* =====================
