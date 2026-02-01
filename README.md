@@ -69,11 +69,16 @@ https://jmena007.github.io/Nova-website/#experiencia
 
 📁 Estructura del proyecto
 
-/
+/ *Principal*
 |-- index.html
 |-- estilo.css
 |-- funciones.js
-|-- exitalert.js
+|-- event.js
+ 
+  *Contacto*
+|-- contact.html
+|-- contact.css
+|-- contact.js
 |-- README.md
 
 
