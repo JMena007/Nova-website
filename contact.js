@@ -45,4 +45,22 @@ document.querySelectorAll("a").forEach(link => {
   });
 });
 
+// Evento textbox comentario en WhatsApp 
+
+document.getElementById("btn-comentario")?.addEventListener("click", () => {
+  const comentario = document.getElementById("comentario").value.trim();
+
+  if (!comentario) {
+    alert("Escribe un comentario antes de enviar");
+    return;
+  }
+
+  const telefono = "50586953946"; // tu número sin +
+  const mensaje = encodeURIComponent("Comentario desde el sitio:\n" + comentario);
+
+  const url = `https://wa.me/${telefono}?text=${mensaje}`;
+  window.open(url, "_blank");
+});
+
+
   
