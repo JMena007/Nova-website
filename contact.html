@@ -9,20 +9,22 @@
 <body>
 
   <!-- HEADER + NAVEGACIÓN -->
-  <header class="side-header">
-    <div class="header-inner">
-      <div class="logo">JmenaDev</div>
-      <button class="menu-btn" aria-label="Abrir menú">☰</button>
-    </div>
+  <div id="contenido">
+     <header class="side-header">
+       <div class="header-inner">
+        <div class="logo">JmenaDev</div>
+        <button class="menu-btn" aria-label="Abrir menú">☰</button>
+      </div>
+    
     <nav id="lista">
       <ul>
-        <li><a href="index.html" onclick="sessionStorage.setItem('volver','true')">Regresar a Inicio</a></li>
+        <li><a href="Index.html">Regresar a Inicio</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
-  <main id="contenido">
+  <main>
 
     <!-- FORMULARIO DE CONTACTO -->
     <section id="contact">
@@ -89,7 +91,7 @@
   <footer id="footer">
     <p>© 2026 JmenaDev</p>
   </footer>
-
+</div>
   <!-- SCRIPTS -->
   <script src="funciones.js"></script>
   <script src="contact.js"></script>
