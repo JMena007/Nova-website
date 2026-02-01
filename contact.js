@@ -26,7 +26,7 @@ document.querySelectorAll("a").forEach(link => {
 
       setTimeout(() => {
         window.location.href = href;
-      }, 500);
+      }, 800);
     } else {
       window.location.href = href;
     }
