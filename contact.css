@@ -32,10 +32,6 @@ body {
   transition: opacity 0.8s ease;
 }
 
-#splash.fade-out {
-  opacity: 0;
-  pointer-events: none;
-}
 
 .hidden {
   display: none;
