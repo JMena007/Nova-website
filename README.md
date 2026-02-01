@@ -48,11 +48,10 @@ Correo electrónico
 Número de teléfono
 
 
-Actualmente, el envío se puede manejar mediante:
+Actualmente, el envío  de Correo se puede manejar mediante:
 
 mailto:
 
-Backend propio (PHP)
 
 Servicios externos como Formspree o Netlify Forms
 
@@ -87,4 +86,4 @@ https://jmena007.github.io/Nova-website/#experiencia
 
 Josué Mena
 Estudiante de Ingeniería en Ciencias de la Computación
-Desarrollador enfocado en backend, APIs y arquitectura de software.
+Desarrollador enfocado FullStack JavaScript 🟨, APIs y arquitectura de software.
