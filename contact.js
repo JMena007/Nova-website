@@ -37,7 +37,7 @@ document.querySelectorAll("a").forEach(link => {
       // Esperamos que termine la transición CSS antes de navegar
       setTimeout(() => {
         window.location.href = href;
-      }, 400); // Debe coincidir con CSS
+      }, 400);
     } else {
       // Si no existe contenido, navegar normalmente
       window.location.href = href;
