@@ -17,9 +17,8 @@ body {
 }
 
 /* =====================
-   SPLASH
+   SPLASH / BIENVENIDA
 ===================== */
-/* Splash ocupa toda la pantalla */
 #splash {
   position: fixed;
   inset: 0;
@@ -29,18 +28,22 @@ body {
   justify-content: center;
   z-index: 9999;
   opacity: 1;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.4s ease;
 }
 
-
-.hidden {
-  display: none;
-}
-
-/* Cuando se oculta */
 #splash.fade-out {
   opacity: 0;
   pointer-events: none;
+}
+
+/* Contenido principal */
+#contenido {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+#contenido.fade-out {
+  opacity: 0;
 }
 
 /* Contenido oculto al inicio */
@@ -77,7 +80,7 @@ body {
 }
 
 /* =====================
-   NAV
+   NAV / MENÚ
 ===================== */
 #lista {
   display: none; /* por defecto */
@@ -148,65 +151,36 @@ textarea {
 /* =====================
    CONTACTO DIRECTO
 ===================== */
-
-.llamar-link {
-  display:inline-block;
-  padding:10px 20px;
-  background-color:green;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
-  width: 95px;
-  text-align:center;
-  
-}
-
-.facebook-link {
-  display:inline-block;
-  padding:10px 20px;
-  background-color:#4267B2;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
-  width:95px;
-  text-align:center;
-}
-
-.whats-link {
-  display:inline-block;
-  padding:10px 20px;
-  background-color:#25D366;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
-  width:95px;
-  text-align:center;
-}
-
+.llamar-link,
+.facebook-link,
+.whats-link,
 .github-link {
-  display:inline-block;
-  padding:10px 20px;
-  background-color:black;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
-  width:93px;
-  text-align:center;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
 }
+
+.llamar-link { background-color: green; width: 95px; }
+.facebook-link { background-color: #4267B2; width: 95px; }
+.whats-link { background-color: #25D366; width: 95px; }
+.github-link { background-color: black; width: 93px; }
+
 .contact-container {
   display: flex;
-  flex-wrap: wrap;           /* baja botones si no caben en móvil */
-  justify-content: center;    /* centra todo el conjunto */
-  gap: 20px;                  /* espacio entre los grupos */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .contact-row,
 .twobtn {
   display: flex;
-  gap: 14px;                  /* espacio entre los botones de cada grupo */
+  gap: 14px;
   margin-bottom: 20px;
 }
-
 
 /* =====================
    FOOTER
