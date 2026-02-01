@@ -1,4 +1,6 @@
-/* Efecto fade-out al salir de la página de contacto */
+/* ==========================
+   Efecto fade-out al salir de la página de contacto
+========================== */
 document.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
@@ -14,20 +16,26 @@ document.querySelectorAll("a").forEach(link => {
       return;
     }
 
-    e.preventDefault(); // detenemos navegación normal.
+    e.preventDefault(); // Detiene el cambio inmediato
 
     const contenido = document.getElementById("contenido");
 
-    // Marcamos que venimos desde contacto
+    // Marcamos que venimos desde Contacto
     sessionStorage.setItem("skipSplash", "true");
 
     if (contenido) {
+      // Forzamos repaint para evitar glitches
+      contenido.getBoundingClientRect();
+
+      // Aplicamos fade-out
       contenido.classList.add("fade-out");
 
+      // Esperamos que termine la transición CSS antes de navegar
       setTimeout(() => {
         window.location.href = href;
-      }, 400);
+      }, 500); // Debe coincidir con CSS
     } else {
+      // Si no existe contenido, navegar normalmente
       window.location.href = href;
     }
   });
