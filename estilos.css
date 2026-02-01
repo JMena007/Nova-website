@@ -257,3 +257,7 @@ a:hover {
         align-items: center;
     }
 }
+/* Ajuste de texto centrado */
+#vision {
+  text-align: Center;
+}
