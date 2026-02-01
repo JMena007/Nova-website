@@ -1,3 +1,4 @@
+
 /* ==========================
    Efecto fade-out al salir de la página de contacto
 ========================== */
@@ -29,14 +30,19 @@ document.querySelectorAll("a").forEach(link => {
 
       // Aplicamos fade-out
       contenido.classList.add("fade-out");
+      
+      document.body.classList.add("fade-out"); // <-- agrega esto
+
 
       // Esperamos que termine la transición CSS antes de navegar
       setTimeout(() => {
         window.location.href = href;
-      }, 500); // Debe coincidir con CSS
+      }, 400); // Debe coincidir con CSS
     } else {
       // Si no existe contenido, navegar normalmente
       window.location.href = href;
     }
   });
 });
+
+  
