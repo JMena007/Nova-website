@@ -52,8 +52,6 @@ body {
 #contenido {
   opacity: 0;
   transition: opacity 0.8s ease;
-  padding-bottom: 80px;
-
 }
 
 #contenido.show {
@@ -189,9 +187,9 @@ details summary {
 /* =====================
    FOOTER
 ===================== */
-#footx {
+footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 10px;
     color: white;
     background-color: black;
@@ -266,12 +264,10 @@ a:hover {
 
 /* Contenedor de botones */
 #faq {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin: 30px auto;
-  width: 90%;
-  max-width: 700px; /* igual que tus secciones */
+  display: flex;              /* Coloca los botones en fila */
+  justify-content: center;    /* Centra horizontalmente */
+  gap: 16px;                  /* Espacio entre botones */
+  margin: 30px 0;             /* Separación arriba y abajo */
 }
 
 /* Botón Salir */
@@ -296,7 +292,7 @@ a:hover {
   font-weight: bold;
 }
 
-/* Hover / toque  */
+/* Hover / toque */
 #btn-c:hover {
   background: #2746a3;        /* Azul un poco más claro */
 }
