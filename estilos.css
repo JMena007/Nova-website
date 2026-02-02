@@ -261,3 +261,43 @@ a:hover {
 #vision {
   text-align: Center;
 }
+
+/* Contenedor de botones */
+#faq {
+  display: flex;              /* Coloca los botones en fila */
+  justify-content: center;    /* Centra horizontalmente */
+  gap: 16px;                  /* Espacio entre botones */
+  margin: 30px 0;             /* Separación arriba y abajo */
+}
+
+/* Botón Salir */
+#btn-exit {
+  background: #374151;        /* Gris oscuro elegante (mejor que negro puro) */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Botón Contacto */
+#btn-c {
+  background: #1e3a8a;        /* Azul del header (consistencia visual) */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover / toque */
+#btn-c:hover {
+  background: #2746a3;        /* Azul un poco más claro */
+}
+
+#btn-exit:hover {
+  background: #1f2933;        /* Gris un poco más oscuro */
+}
+  
