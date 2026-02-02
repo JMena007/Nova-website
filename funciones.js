@@ -72,7 +72,7 @@ if(btnExit) {
   btnExit.addEventListener("click", function () {
     const confirmar = confirm("Quieres salir de la app?");
     
-    if (confirmar) {
+    if (!confirmar) {
       window.history.back();
     }else{
       window.location.href = "https://www.google.com";
