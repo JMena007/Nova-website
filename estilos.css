@@ -34,7 +34,7 @@ body {
   justify-content: center;
   z-index: 99999;
   opacity: 1;
-  color: blue;
+  color:  #1e3a8a;
   transition: opacity 0.8s ease;
 }
 
@@ -219,7 +219,7 @@ footer {
     height: 45px;
     border-radius: 50%;
     border: none;
-    background-color: #5DADE6;
+    background-color:  #1e3a8a;
     color: white;
     font-size: 22px;
     cursor: pointer;
@@ -240,7 +240,7 @@ a {
 }
 
 a:hover {
-    color: #1ebe5d;
+    color: #274;
 }
 
 #exp {
@@ -257,9 +257,9 @@ a:hover {
         align-items: center;
     }
 }
-/* Ajuste de texto centrado */
-#vision {
-  text-align: Center;
+
+#vision{
+  text-align: center;
 }
 
 /* Contenedor de botones */
