@@ -59,3 +59,24 @@ textarea?.addEventListener("input", () => {
   textarea.style.fontSize =
     textarea.value.length > 200 ? "14px" : "16px";
 });
+
+/* ==========================
+   TEXTAREA DINÁMICO
+========================== */
+
+// seleccionamos en el DOM (hmtl)
+const btnExit = document.getElementById("btn-exit");
+
+// un if para verificar que exista y dentro ponemos el evento
+if(btnExit) {
+  btnExit.addEventListener("click", function () {
+    const confirmar = confirm("Quieres salir de la app?");
+    
+    if (confirmar) {
+      window.history.back();
+    }else{
+      window.location.href = "https://www.google.com";
+    }
+  });
+}
+
