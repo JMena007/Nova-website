@@ -52,6 +52,8 @@ body {
 #contenido {
   opacity: 0;
   transition: opacity 0.8s ease;
+  padding-bottom: 80px;
+
 }
 
 #contenido.show {
@@ -189,7 +191,7 @@ details summary {
 ===================== */
 footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 10px;
     color: white;
     background-color: black;
