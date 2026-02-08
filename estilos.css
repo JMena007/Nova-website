@@ -156,6 +156,14 @@ section {
     margin: 40px 0 10px 0;
     color: black;
     text-align: center;
+    background:  linear-gradient(90deg, #1e3a8a, #3b82f6, #06b6d4); 
+    
+  -webkit-background-clip: text;   /* Recorta el fondo al texto */
+  -webkit-text-fill-color: transparent; /* Hace el texto transparente para que se vea el degradado */
+  
+  background-clip: text;           /* Para otros navegadores */
+  color: transparent;              /* Fallback */
+
 }
 
 .parrafo, .title {
