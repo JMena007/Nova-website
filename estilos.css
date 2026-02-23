@@ -289,6 +289,32 @@ a:hover {
     }
 }
 
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #lista {
+    display: none;
+  }
+
+  #lista.show {
+    display: block;
+  }
+}
+
 #vision{
   text-align: center;
 }
