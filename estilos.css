@@ -165,6 +165,7 @@ section {
     max-width: 700px;
     margin: auto;
     line-height: 1.5;
+    text-align: center;
 }
 
 #titulo {
@@ -183,6 +184,13 @@ section {
 
 .parrafo, .title {
     text-align: center;
+}
+
+#vision,
+#experiencia,
+#estudios,
+#question {
+  text-align: center;
 }
 
 /* =====================
