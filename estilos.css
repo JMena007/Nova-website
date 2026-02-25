@@ -127,22 +127,6 @@ body {
 }
 
 /* =====================
-   MARCA DE AGUA
-===================== */
-#enc{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-30deg);
-    font-size: 50px;
-    color: rgba(0, 0, 0, 0.2);
-    pointer-events: none;
-    z-index: 9999;
-    white-space: nowrap;
-    text-align: center;
-}
-
-/* =====================
    SECCIONES PRINCIPALES
 ===================== */
 section {
