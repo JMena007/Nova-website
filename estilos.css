@@ -3,11 +3,7 @@
 ===================== */
 html, body {
     overflow-x: hidden; /* Evita scroll horizontal */
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, sans-serif;
 }
-
 /* =====================
    BODY / BACKGROUND
 ===================== */
