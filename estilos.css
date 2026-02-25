@@ -97,7 +97,7 @@ body {
     background-color: rgba(0,0,0,0.9); 
     position: absolute;
     top: 80px; /* justo debajo del header */
-    right: 0;
+    right: 5px;
     width: 200px;
     padding: 10px;
     border-radius: 6px;
