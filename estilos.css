@@ -3,7 +3,11 @@
 ===================== */
 html, body {
     overflow-x: hidden; /* Evita scroll horizontal */
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
 }
+
 /* =====================
    BODY / BACKGROUND
 ===================== */
@@ -39,19 +43,10 @@ body {
   pointer-events: none;
 }
 
-/* Contenido oculto al inicio */
-.hidden {
+/* Contenido oculto al inicio */ .hidden {
   display: none;
-}
+} 
 
-
-.header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 64px;
-}
 
 /* Contenido con fade */
 #contenido {
@@ -99,7 +94,7 @@ body {
 #lista {
     display: none; /* oculto por defecto */
     flex-direction: column;
-    background-color: rgba(0,0,0,0.9); /* fondo menú móvil */
+    background-color: rgba(0,0,0,0.9); 
     position: absolute;
     top: 80px; /* justo debajo del header */
     right: 0;
@@ -134,7 +129,7 @@ body {
 /* =====================
    MARCA DE AGUA
 ===================== */
-#enc {
+#marca {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -155,7 +150,7 @@ section {
     max-width: 700px;
     margin: auto;
     line-height: 1.5;
-    text-align: center;
+    margin-bottom: 40px;
 }
 
 #titulo {
@@ -176,13 +171,6 @@ section {
     text-align: center;
 }
 
-#vision,
-#experiencia,
-#estudios,
-#question {
-  text-align: center;
-}
-
 /* =====================
    EXPERIENCIA / ESTUDIOS
 ===================== */
@@ -200,9 +188,19 @@ section {
 /* =====================
    FAQ / PREGUNTAS FRECUENTES
 ===================== */
-details summary {
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+details {
+  border: 1px solid #1e3a8a;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+/* cuando abre el details, se abre con el texto que hay dentro */
+details[open] {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* =====================
@@ -221,7 +219,7 @@ footer {
 ===================== */
 .flotante {
     position: fixed;
-    right: 20px;
+    right: 8px;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
@@ -279,32 +277,6 @@ a:hover {
     }
 }
 
-/* ==========================
-   RESPONSIVE DESIGN
-========================== */
-
-@media (max-width: 768px) {
-  main {
-    padding: 15px;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-
-  #lista {
-    display: none;
-  }
-
-  #lista.show {
-    display: block;
-  }
-}
-
 #vision{
   text-align: center;
 }
@@ -347,4 +319,15 @@ a:hover {
 #btn-exit:hover {
   background: #1f2933;        /* Gris un poco más oscuro */
 }
+
+#question{
+  padding: 40px;
+  border: 2px solid #4da3ff;
+  border-radius: 15px;
+  max-width: 250px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+  
   
