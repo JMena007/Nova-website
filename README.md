@@ -15,7 +15,7 @@ Formulario de contacto.
 
 Estilos personalizados con Estilo.css.
 
-Funciones simples con funciones.js.
+Funciones concretas incluyendo Async Await con funciones.js, Evento.js, contact.js.
 
 Preparado para desplegarse en GitHub Pages.
 
@@ -30,7 +30,7 @@ CSS3
 
 JavaScript
 
-Git & GitHub (para gestión del proyecto)
+GitHub (para gestión del proyecto)
 
 
 
@@ -85,5 +85,5 @@ https://jmena007.github.io/Nova-website/#experiencia
 🧑‍💻 Autor
 
 Josué Mena
-Estudiante de Ingeniería en Ciencias de la Computación
-Desarrollador enfocado FullStack JavaScript 🟨, APIs y arquitectura de software.
+Estudiante de Ingeniería en Ciencias de la Computación UNAN Managua 🧑🏻‍💻
+Desarrollador FullStack JavaScript 🟨, APIs y arquitectura de software.
