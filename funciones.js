@@ -35,6 +35,15 @@ if (btnMenu && menu) {
   });
 }
 
+// cierra el btn despues de tocar link
+const enlaces = document.querySelectorAll("#lista a");
+
+enlaces.forEach(link => {
+  link.addEventListener("click", () => {
+    lista.classList.remove("show");
+  });
+});
+
 /* ==========================
    BOTÓN VOLVER ARRIBA
 ========================== */
