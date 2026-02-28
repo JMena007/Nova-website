@@ -91,39 +91,34 @@ body {
 /* =====================
    NAV / MENÚ DESPLEGABLE
 ===================== */
+
 #lista {
-    display: none; /* oculto por defecto */
+    display: none;
     flex-direction: column;
-    background-color: rgba(0,0,0,0.9); 
-    position: relative;
-    top: 80px; /* justo debajo del header */
-    right: 5px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 6px;
-    color: white;
-    transition: all 0.3s ease;
+    background-color: rgba(0,0,0,0.95);
+    width: 100%;
 }
 
 #lista.show {
-    display: flex; /* se muestra al hacer click en hamburguesa */
+    display: flex;
 }
 
 #lista ul {
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column; /* 👈 columna SIEMPRE en móvil */
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 #lista li {
-    margin: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 #lista a {
+    display: block;
+    padding: 15px;
     color: white;
-    text-decoration: none;
 }
 
 /* =====================
