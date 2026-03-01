@@ -108,7 +108,7 @@ body {
 
 #lista ul {
     display: flex;
-    flex-direction: column; /* 👈 columna SIEMPRE en móvil */
+    flex-direction: column; /*  columna SIEMPRE en móvil */
     padding: 0;
     margin: 0;
     list-style: none;
@@ -280,6 +280,16 @@ a:hover {
     
     section{
       text-align: center;
+    }
+    .return-btn{
+        width: 70px;
+        height: 70px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 }
 
