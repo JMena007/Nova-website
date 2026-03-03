@@ -155,6 +155,9 @@ section {
   color: transparent;              /* Fallback */
 
 }
+#titulo p { 
+     margin-bottom: 30px;
+}
 
 .parrafo, .title {
     text-align: center;
