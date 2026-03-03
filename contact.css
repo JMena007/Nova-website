@@ -293,9 +293,76 @@ textarea {
 /* =====================
    MEDIA QUERIES
 ===================== */
-@media (max-width: 768px) {
-  #lista {
-    width: 180px;
+
+/* =====================
+   DESKTOP OPTIMIZADO
+===================== */
+@media (min-width: 1024px) {
+
+  /* Contenedor principal más amplio */
+  .contact-form {
+    max-width: 800px;
   }
+
+  form {
+    width: 600px;
+  }
+
+  /* Inputs ocupan todo el ancho */
+  .form-group input {
+    width: 95%; /* ancho del inpur*/
+  }
+
+  /* Textarea más proporcional */
+  textarea {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    margin-top: 30px;
+  }
+
+  #btn-comentario {
+    margin-left: 600px;
+    margin-bottom: 25px;
+    width: 200px;
+  }
+
+  /* Header más espacioso */
+  .header-inner {
+    padding: 30px 80px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  /* Menú */
+  #lista {
+    top: 90px;
+    width: 220px;
+  }
+
+  #llamar-link,
+  #facebook-link,
+  #whats-link,
+  #github-link {
+    width: 160px;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+
+  /* Filas mejor distribuidas */
+  .contact-row,
+  .twobtn {
+    gap: 40px;
+  }
+
+  /* Footer más amplio */
+  #footer {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
 }
 
