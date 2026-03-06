@@ -314,13 +314,6 @@ textarea {
   }
 
   /* Textarea más proporcional */
-  textarea {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    display: block;
-    margin-top: 30px;
-  }
 
    .comentario-box{
     display:flex;
@@ -333,10 +326,6 @@ textarea {
 
    #comentario{
     width:350px;
-  }
-
-   #btn-comentario{
-     margin:0;
   }
 
   /* Header más espacioso */
