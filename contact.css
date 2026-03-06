@@ -313,20 +313,33 @@ textarea {
     width: 95%; /* ancho del inpur*/
   }
 
-  /* Textarea más proporcional */
+    /* =====================
+   COMENTARIOS
+===================== */
+.comentario-box{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  align-items:center;
+  margin-top:20px;
+  flex-wrap:wrap;
+}
 
-   .comentario-box{
-    display:flex;
-    gap:10px;
-    justify-content:center;
-    align-items:center;
-    margin-top:20px;
-     flex-wrap:wrap;
-  }
+#comentario{
+  width:350px;
+  min-height:40px;
+  padding:10px;
+  border-radius:6px;
+}
 
-   #comentario{
-    width:350px;
-  }
+#btn-comentario{
+  padding:10px 15px;
+  border-radius:6px;
+  background:#25D366;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
 
   /* Header más espacioso */
   .header-inner {
