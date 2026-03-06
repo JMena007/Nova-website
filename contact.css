@@ -322,10 +322,15 @@ textarea {
     margin-top: 30px;
   }
 
-  #btn-comentario {
-    margin-left: 600px;
-    margin-bottom: 25px;
-    width: 200px;
+   .form-actions{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+  }
+
+   .form-actions button{
+     padding:10px 18px;
   }
 
   /* Header más espacioso */
