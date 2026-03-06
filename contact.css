@@ -297,7 +297,7 @@ textarea {
 /* =====================
    DESKTOP OPTIMIZADO
 ===================== */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
   /* Contenedor principal más amplio */
   .contact-form {
