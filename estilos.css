@@ -78,16 +78,15 @@ body {
     margin-bottom: 40px;
 }
 
-.header-inner {
-    display: flex;
-    justify-content: space-between; /* logo a la izquierda, btn a la derecha */
-    align-items: center;
-    padding: 35px;
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo img{
+  width: 130px;
+  height: auto;
 }
 
 .menu-btn {
