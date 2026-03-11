@@ -78,10 +78,16 @@ body {
     margin-bottom: 40px;
 }
 
-.header-inner{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-inner {
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda, btn a la derecha */
+    align-items: center;
+    padding: 13px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .logo img{
