@@ -19,6 +19,44 @@ html, body {
   mix-blend-mode: multiply;
 }
 
+
+/* =====================
+   SPLASH / BIENVENIDA
+===================== */
+#splash-contact{
+  position: fixed;
+  inset: 0;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  opacity: 1;
+  color:  #1e3a8a;
+  transition: opacity 0.8s ease;
+}
+
+#splash-contact svg {
+  width: 100px;
+  margin-top: 20px;
+}
+
+#splash-contact.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+/* Contenido con fade */
+#contenido {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+#contenido.show {
+  display: block;
+  opacity: 1;
+}
+
 /* =====================
    BODY / BACKGROUND
 ===================== */
