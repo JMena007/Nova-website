@@ -8,9 +8,17 @@ html, body {
 }
 
 
-logo{
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;   
+}
+
+.logo img{
+  width: 170px;
+  height: auto;
   mix-blend-mode: multiply;
 }
+
 /* =====================
    BODY / BACKGROUND
 ===================== */
