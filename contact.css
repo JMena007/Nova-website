@@ -7,6 +7,10 @@ html, body {
   font-family: system-ui, sans-serif;
 }
 
+
+logo{
+  mix-blend-mode: multiply;
+}
 /* =====================
    BODY / BACKGROUND
 ===================== */
