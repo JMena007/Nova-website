@@ -376,3 +376,11 @@ a:hover {
  grid-column: 2;
  justify-self: center;
 }
+
+.logo img {
+ height: 48px; /* altura del logo en desktop (ajusta según diseño) */
+ max-height: 64px;
+ width: auto;
+ display: block;
+ object-fit: contain; 
+}
