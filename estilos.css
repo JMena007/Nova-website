@@ -387,3 +387,12 @@ a:hover {
   height: clamp(60px, 8vw, 140px);
   width: auto;
 }
+
+/* classname conectada al JS para iluminación de section con evento click() */
+.highlight {
+  border: 3px solid #3b82f6;
+  border-radius: 12px;
+  padding: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(59,130,246,0.5);
+}
