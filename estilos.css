@@ -87,12 +87,12 @@ body {
 
 .logo {
  grid-column: 1;
- justify-self: start;
+ justify-self: center;
 }
 
 .logo img{
-  height: 200px;
-  width: auto;
+  height: auto;
+  width: 100px;
   display: block;
   object-fit: contain;
 }
