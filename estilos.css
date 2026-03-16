@@ -389,10 +389,11 @@ a:hover {
 }
 
 /* classname conectada al JS para iluminación de section con evento click() */
-.highlight {
+
+.section-highlight{
   border: 3px solid #3b82f6;
   border-radius: 12px;
   padding: 10px;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px rgba(59,130,246,0.5);
+  box-shadow: 0 0 12px rgba(59,130,246,0.4);
+  transition: all 0.4s ease;
 }
