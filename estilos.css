@@ -395,5 +395,5 @@ a:hover {
   border-radius: 12px;
   padding: 10px;
   box-shadow: 0 0 12px rgba(59,130,246,0.4);
-  transition: all 0.4s ease;
+  transition:  0.3s ease;
 }
