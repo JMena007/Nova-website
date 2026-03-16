@@ -15,25 +15,20 @@ window.addEventListener("load", () => {
 
   // Espera 1.8s antes de iniciar fade
   setTimeout(() => {
-    splash.classList.add("fade-out");  // splash comienza fade
-    contenido.classList.add("show");   // contenido aparece simultáneamente
 
-    // Después de que termine la transición, ocultar splash
+    splash.classList.add("fade-out");
+    contenido.classList.add("show");
+
+    // ocultar splash después del fade
     setTimeout(() => {
 
-  splash.classList.add("fade-out");
-  contenido.classList.add("show");
+      splash.style.display = "none";
+      sessionStorage.setItem("skipSplash", "true");
 
-    splash.style.display = "none";
+    }, 800);
 
-    // guardamos que ya se mostró
-    sessionStorage.setItem("skipSplash", "true");
-
-  }, 800);
-
-}, 1800);
-
-
+  }, 1800);
+});
 // Aqui sombreamos o iluminamos la section seleccionada:
 
 const menuLinks = document.querySelectorAll("#lista a");
