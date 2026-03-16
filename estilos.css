@@ -82,7 +82,7 @@ body {
     display: flex;
     justify-content: space-between; /* logo a la izquierda, btn a la derecha */
     align-items: center;
-    padding: 13px;
+    padding: 20px;
 }
 
 .logo {
