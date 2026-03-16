@@ -25,31 +25,33 @@ window.addEventListener("load", () => {
   }, 1800);
 });
 
+
 // Aqui sombreamos o iluminamos la section seleccionada:
 
 const menuLinks = document.querySelectorAll("#lista a");
+let activeSection = null;
 
 menuLinks.forEach(link => {
 
- link.addEventListener("click", function(){
+  link.addEventListener("click", function(){
 
-  const targetID = this.getAttribute("href");
+    const targetID = this.getAttribute("href");
 
-  // si no es enlace interno (#algo) no hace nada
-  if(!targetID.startsWith("#")) return;
+    if(!targetID.startsWith("#")) return;
 
-  const section = document.querySelector(targetID);
+    const section = document.querySelector(targetID);
 
-  if(section){
+    if(!section) return;
 
+    // quitar resaltado anterior
+    if(activeSection){
+      activeSection.classList.remove("section-highlight");
+    }
+
+    // agregar al nuevo
     section.classList.add("section-highlight");
+    activeSection = section;
 
-    setTimeout(()=>{
-      section.classList.remove("section-highlight");
-    },2000);
-
-  }
-
- });
+  });
 
 });
