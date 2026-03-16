@@ -91,9 +91,10 @@ body {
 }
 
 .logo img{
-  width: 170px;
-  height: 100px;
-  mix-blend-mode: multiply;
+  height: 60px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .menu-btn {
@@ -378,9 +379,12 @@ a:hover {
 }
 
 .logo img {
- height: 80px; /* altura del logo en desktop (ajusta según diseño) */
  max-height: 64px;
- width: auto;
  display: block;
  object-fit: contain; 
+}
+
+.logo img{
+  height: clamp(60px, 8vw, 110px);
+  width: auto;
 }
