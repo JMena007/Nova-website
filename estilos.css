@@ -374,7 +374,7 @@ a:hover {
 }
 
 .logo {
- grid-column: 2;
+ grid-column: 1;
  justify-self: center;
 }
 
