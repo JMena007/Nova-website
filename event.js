@@ -24,8 +24,6 @@ window.addEventListener("load", () => {
   splash.classList.add("fade-out");
   contenido.classList.add("show");
 
-  setTimeout(() => {
-
     splash.style.display = "none";
 
     // guardamos que ya se mostró
