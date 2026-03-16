@@ -379,7 +379,6 @@ a:hover {
 }
 
 .logo img {
- max-height: 100px;
  display: block;
  object-fit: contain; 
 }
