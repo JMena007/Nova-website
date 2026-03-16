@@ -287,7 +287,7 @@ a:hover {
 
     #lista ul {
         flex-direction: row; /* Menú horizontal */
-        gap: 30px;
+        gap: 50px;
     }
 
     #lista li {
@@ -295,7 +295,7 @@ a:hover {
     }
 
     #lista a {
-        padding: 10px;
+        padding: 15px;
     }
     
     section{
