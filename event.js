@@ -20,10 +20,20 @@ window.addEventListener("load", () => {
 
     // Después de que termine la transición, ocultar splash
     setTimeout(() => {
-      splash.style.display = "none";
-    }, 800); // igual al tiempo de transición en CSS
-  }, 1800);
-});
+
+  splash.classList.add("fade-out");
+  contenido.classList.add("show");
+
+  setTimeout(() => {
+
+    splash.style.display = "none";
+
+    // guardamos que ya se mostró
+    sessionStorage.setItem("skipSplash", "true");
+
+  }, 800);
+
+}, 1800);
 
 
 // Aqui sombreamos o iluminamos la section seleccionada:
@@ -51,6 +61,20 @@ menuLinks.forEach(link => {
     // agregar al nuevo
     section.classList.add("section-highlight");
     activeSection = section;
+
+  });
+
+});
+
+
+//Activador del svg en retorno
+const links = document.querySelectorAll("a");
+
+links.forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    sessionStorage.removeItem("skipSplash");
 
   });
 
