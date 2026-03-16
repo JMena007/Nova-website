@@ -24,3 +24,24 @@ window.addEventListener("load", () => {
     }, 800); // igual al tiempo de transición en CSS
   }, 1800);
 });
+
+// Aqui sombreamos o iluminamos la section seleccionada:
+
+const links = document.querySelectorAll("#lista a");
+
+links.forEach(link => {
+
+ link.addEventListener("click", function(){
+
+  const id = this.getAttribute("href");
+  const section = document.querySelector(id);
+
+  section.classList.add("highlight");
+
+  setTimeout(()=>{
+    section.classList.remove("highlight");
+  },2000);
+
+ });
+
+});
