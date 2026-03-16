@@ -27,20 +27,28 @@ window.addEventListener("load", () => {
 
 // Aqui sombreamos o iluminamos la section seleccionada:
 
-const links = document.querySelectorAll("#lista a");
+const menuLinks = document.querySelectorAll("#lista a");
 
-links.forEach(link => {
+menuLinks.forEach(link => {
 
  link.addEventListener("click", function(){
 
-  const id = this.getAttribute("href");
-  const section = document.querySelector(id);
+  const targetID = this.getAttribute("href");
 
-  section.classList.add("highlight");
+  // si no es enlace interno (#algo) no hace nada
+  if(!targetID.startsWith("#")) return;
 
-  setTimeout(()=>{
-    section.classList.remove("highlight");
-  },2000);
+  const section = document.querySelector(targetID);
+
+  if(section){
+
+    section.classList.add("section-highlight");
+
+    setTimeout(()=>{
+      section.classList.remove("section-highlight");
+    },2000);
+
+  }
 
  });
 
