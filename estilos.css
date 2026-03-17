@@ -272,7 +272,7 @@ a:hover {
 /* =====================
    DESKTOP
 ===================== */
-@media (min-width: 1400px) {
+@media (min-width: 920px) {
   
     .menu-btn {
         display: none; /* Esto Oculta hamburguesa en desktop */
