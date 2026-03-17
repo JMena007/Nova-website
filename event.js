@@ -1,35 +1,51 @@
 window.addEventListener("load", () => {
+
   const splash = document.getElementById("splash");
   const contenido = document.getElementById("contenido");
+  const mensaje = document.getElementById("mensaje-bienvenida");
 
   if (!splash || !contenido) return;
 
-  const skipSplash = sessionStorage.getItem("skipSplash");
+  const returning = sessionStorage.getItem("returning");
 
-  if (skipSplash) {
-    splash.style.display = "none";
-    contenido.classList.add("show");
-    sessionStorage.removeItem("skipSplash");
+  // Si el usuario está regresando
+  if (returning) {
+
+    if (mensaje) mensaje.style.display = "none";
+
+    setTimeout(() => {
+
+      splash.classList.add("fade-out");
+      contenido.classList.add("show");
+
+      setTimeout(() => {
+        splash.style.display = "none";
+      }, 500);
+
+    }, 800);
+
+    sessionStorage.removeItem("returning");
     return;
   }
 
-  // Espera 1.8s antes de iniciar fade
+  // Primera visita (muestra Bienvenido)
   setTimeout(() => {
 
     splash.classList.add("fade-out");
     contenido.classList.add("show");
 
-    // ocultar splash después del fade
     setTimeout(() => {
-
       splash.style.display = "none";
-      sessionStorage.setItem("skipSplash", "true");
-
     }, 800);
 
   }, 1800);
+
 });
-// Aqui sombreamos o iluminamos la section seleccionada:
+
+
+// ==============================
+// Highlight de secciones
+// ==============================
 
 const menuLinks = document.querySelectorAll("#lista a");
 let activeSection = null;
@@ -40,18 +56,16 @@ menuLinks.forEach(link => {
 
     const targetID = this.getAttribute("href");
 
-    if(!targetID.startsWith("#")) return;
+    if (!targetID.startsWith("#")) return;
 
     const section = document.querySelector(targetID);
 
-    if(!section) return;
+    if (!section) return;
 
-    // quitar resaltado anterior
-    if(activeSection){
+    if (activeSection){
       activeSection.classList.remove("section-highlight");
     }
 
-    // agregar al nuevo
     section.classList.add("section-highlight");
     activeSection = section;
 
@@ -60,14 +74,17 @@ menuLinks.forEach(link => {
 });
 
 
-//Activador del svg en retorno
-const links = document.querySelectorAll("a");
+// ==============================
+// Activador del retorno splash
+// ==============================
+
+const links = document.querySelectorAll("a[href]");
 
 links.forEach(link => {
 
   link.addEventListener("click", () => {
 
-    sessionStorage.removeItem("skipSplash");
+    sessionStorage.setItem("returning", "true");
 
   });
 
