@@ -86,6 +86,17 @@ body {
 }
 
 .logo {
+    font-size: 1.5rem;
+    font-weight: bold;   
+}
+
+.logo img{
+  width: 170px;
+  height: auto;
+}
+
+/*
+.logo {
  grid-column: 1;
  justify-self: center;
 }
@@ -96,6 +107,7 @@ body {
   display: block;
   object-fit: contain;
 }
+                      */
 
 .menu-btn {
     background: transparent;
