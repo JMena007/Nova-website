@@ -82,6 +82,7 @@ body {
 .header-inner {
   display: grid;
   grid-template-columns: auto 1fr auto; /* logo - espacio flexible - botón */
+justify-content: center;
   align-items: center;
 }
 
