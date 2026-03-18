@@ -385,6 +385,7 @@ a:hover {
  gap: 12px;
 }
 
+/*
 .logo {
  grid-column: 2;
  justify-self: center;
@@ -394,12 +395,13 @@ a:hover {
  display: block;
  object-fit: contain; 
 }
-
+         
 .logo img{
   height: clamp(60px, 8vw, 140px);
   width: auto;
 }
-
+                                 */
+   
 /* classname conectada al JS para iluminación de section con evento click() */
 
 .section-highlight{
