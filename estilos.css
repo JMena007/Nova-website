@@ -77,15 +77,7 @@ body {
     position: relative;
     margin-bottom: 40px;
 }
-
-/*
-.header-inner {
-    display: flex;
-    justify-content: space-between; /* logo a la izquierda, btn a la derecha */
-    align-items: center;
-    padding: 20px;
-}  */                        
-    
+                       
 
 .header-inner {
   display: grid;
