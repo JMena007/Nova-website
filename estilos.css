@@ -111,7 +111,7 @@ justify-content: center;
                       */
 
 .menu-btn {
-    grid-column: 3;
+    grid-column: 2.5;
     background: transparent;
     border: none;
     color: white;
