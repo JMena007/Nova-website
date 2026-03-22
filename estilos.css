@@ -251,7 +251,7 @@ footer {
 
 .return-btn {
     width: 45px;
-    height: 45px;
+    height: 45dvh;
     border-radius: 50%;
     border: none;
     background-color:  #1e3a8a;
@@ -317,7 +317,7 @@ a:hover {
     }
     .return-btn{
         width: 70px;
-        height: 70px;
+        height: 70dvh;
     }
 
     ul {
