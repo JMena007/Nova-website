@@ -156,6 +156,7 @@ body {
 
 #lista.show {
     display: flex;
+    transform: translateX(0);
 }
 
 #lista ul {
