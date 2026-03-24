@@ -124,16 +124,34 @@ body {
 ===================== */
 
 #lista {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 260px;
+
+    background-color: #1e3a8a;
+
+    display: flex;
     flex-direction: column;
-    background-color: rgba(0,0,0,0.95);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+
+    z-index: 9999;
+    padding-top: 60px;
+}
+
+.close-btn {
+    position: center;
+    top: 15px;
+    left: 15px;
+
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 #lista.show {
