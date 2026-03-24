@@ -44,6 +44,15 @@ enlaces.forEach(link => {
   });
 });
 
+const closeBtn = document.querySelector(".close-btn");
+
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    lista.classList.remove("show");
+  });
+}
+
+
 /* ==========================
    BOTÓN VOLVER ARRIBA
 ========================== */
