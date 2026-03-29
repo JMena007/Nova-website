@@ -31,7 +31,7 @@ const menu = document.getElementById("lista");
 
 if (btnMenu && menu) {
   btnMenu.addEventListener("click", () => {
-    menu.classList.toggle("show");
+    menu.classList.toggle("");
   });
 }
 
