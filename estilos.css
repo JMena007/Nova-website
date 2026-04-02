@@ -312,10 +312,9 @@ a:hover {
     }
 
     #lista {
-        display: flex;
-        position: static;
-        background: transparent;
-        width: auto;
+        display: grid;
+        grid-column: 3:
+        justity-self: end;
     }
 
     #lista ul {
