@@ -306,11 +306,30 @@ a:hover {
    DESKTOP
 ===================== */
 @media (min-width: 920px) {
-.menu-btn {
-    display: none; / oculta hamburguesa /
+  /* Oculta hamburguesa y botón X en desktop */
+  .menu-btn {
+    display: none;
+  }
+  .close-btn {
+    display: none;
   }
 
-#lista {
+  /* Header en columna: logo arriba, menú debajo */
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 170px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Menú horizontal debajo del logo */
+  #lista {
     position: static;
     background: transparent;
     transform: none;
@@ -319,21 +338,21 @@ a:hover {
     padding-top: 0;
   }
 
-#lista ul {
+  #lista ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* fila en desktop */
     gap: 40px;
     margin: 0;
     padding: 0;
     list-style: none;
-    justify-content: center;
+    justify-content: center; /* centrado */
   }
 
-#lista li {
+  #lista li {
     border: none;
   }
 
-#lista a {
+  #lista a {
     color: white;
     padding: 10px;
   }
