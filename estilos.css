@@ -321,11 +321,12 @@ a:hover {
 
 #lista ul {
     display: flex;
-    flex-direction: row; / horizontal en desktop /
+    flex-direction: row;
     gap: 40px;
     margin: 0;
     padding: 0;
     list-style: none;
+    justify-content: center;
   }
 
 #lista li {
