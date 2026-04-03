@@ -393,7 +393,7 @@ lista a {
 }
 
                                
-/*
+
 .logo {
  grid-column: 2;
  justify-self: center;
@@ -408,7 +408,7 @@ lista a {
   height: clamp(60px, 8vw, 140px);
   width: auto;
 }
-                                 */
+                                 
    
 /* classname conectada al JS para iluminación de section con evento click() */
 
