@@ -310,7 +310,7 @@ a:hover {
     display: none; / oculta hamburguesa /
   }
 
-lista {
+#lista {
     position: static;
     background: transparent;
     transform: none;
@@ -319,7 +319,7 @@ lista {
     padding-top: 0;
   }
 
-lista ul {
+#lista ul {
     display: flex;
     flex-direction: row; / horizontal en desktop /
     gap: 40px;
@@ -328,11 +328,11 @@ lista ul {
     list-style: none;
   }
 
-lista li {
+#lista li {
     border: none;
   }
 
-lista a {
+#lista a {
     color: white;
     padding: 10px;
   }
