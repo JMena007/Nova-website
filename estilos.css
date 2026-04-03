@@ -306,49 +306,35 @@ a:hover {
    DESKTOP
 ===================== */
 @media (min-width: 920px) {
-  .menu-btn {
-    display: none; /* Oculta hamburguesa en desktop */
+.menu-btn {
+    display: none; / oculta hamburguesa /
   }
 
-  #lista {
+lista {
     position: static;
-    display: flex;
-    justify-content: flex-end;
     background: transparent;
+    transform: none;
     height: auto;
     width: auto;
     padding-top: 0;
-    transform: none;
   }
 
-  #lista ul {
-    flex-direction: row;
-    gap: 50px;
+lista ul {
+    display: flex;
+    flex-direction: row; / horizontal en desktop /
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  #lista li {
+lista li {
     border: none;
   }
 
-  #lista a {
-    padding: 15px;
+lista a {
     color: white;
-  }
-
-  .header-inner {
-    display: grid;
-    grid-template-columns: 1fr auto 2fr; /* espacio - logo - menú */
-    align-items: center;
-  }
-
-  .logo {
-    grid-column: 2;
-    justify-self: center;
-  }
-
-  #lista {
-    grid-column: 3;
-    justify-self: end;
+    padding: 10px;
   }
 }
   
