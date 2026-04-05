@@ -81,7 +81,7 @@ body {
 
 .header-inner {
     display: flex;
-    justify-content: space-between; /* 🔥 clave */
+    justify-content: space-between; 
     align-items: center;
     padding: 20px 16px;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .logo img{
-  width: 170px;
+  width: 200px;
   height: auto;
 }
 
@@ -306,7 +306,7 @@ a:hover {
    DESKTOP
 ===================== */
 @media (min-width: 920px) {
-  /* Oculta hamburguesa y botón X en desktop */
+
   .menu-btn {
     display: none;
   }
@@ -315,6 +315,7 @@ a:hover {
   }
 
   /* Header en columna: logo arriba, menú debajo */
+
   .header-inner {
     display: flex;
     flex-direction: column;
