@@ -83,16 +83,16 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 50px;
+    padding: 45px;
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;   
 }
 
 .logo img{
-  width: 160px;
+  width: 100px;
   height: auto;
 }
 
