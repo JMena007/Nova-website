@@ -342,7 +342,7 @@ a:hover {
 
   #lista ul {
     display: flex;
-    flex-direction: row; /* fila en desktop */
+    flex-direction: column; /* fila en desktop */
     gap: 40px;
     margin: 0;
     padding: 0;
