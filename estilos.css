@@ -342,12 +342,11 @@ a:hover {
 
   #lista ul {
     display: flex;
-    flex-direction: column; /* fila en desktop */
+    flex-direction: column;
     gap: 40px;
     margin: 0;
     padding: 0;
     list-style: none;
-    justify-content: center; /* centrado */
   }
 
   #lista li {
