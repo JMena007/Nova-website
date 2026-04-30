@@ -187,6 +187,7 @@ section {
     margin: auto;
     line-height: 1.5;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 #titulo {
@@ -213,6 +214,7 @@ section {
 #ex li, .est li {
     margin-bottom: 10px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .dist {
