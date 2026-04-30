@@ -336,13 +336,11 @@ a:hover {
     background: transparent;
     transform: none;
     height: auto;
-    width: auto;
-    padding-top: 0;
+    width: auto
   }
 
   #lista ul {
     display: flex;
-    flex-direction: column;
     gap: 40px;
     margin: 0;
     padding: 0;
