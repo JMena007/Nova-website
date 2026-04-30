@@ -317,9 +317,10 @@ a:hover {
 
   /* Header en columna: logo arriba, menú debajo */
 
+/* */
   .header-inner {
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     align-items: center;
     text-align: center;
   }
