@@ -329,6 +329,7 @@ a:hover {
     width: 170px;
     height: auto;
     margin-bottom: 20px;
+    align-items: center;
   }
 
   /* Menú horizontal debajo del logo */
