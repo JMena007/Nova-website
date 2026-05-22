@@ -311,6 +311,10 @@ a:hover {
 ===================== */
 @media (min-width: 920px) {
 
+   a:hover {
+    color: #274;
+}
+
   .menu-btn {
     display: none;
   }
