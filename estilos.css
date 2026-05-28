@@ -220,7 +220,8 @@ section {
     margin-bottom: 10px;
     line-height: 1.6;
     text-align: center;
-    list-style: inside;
+    list-style-position: inside;
+    padding-left: 0;
 }
 
 .dist {
