@@ -216,7 +216,7 @@ section {
 /* =====================
    EXPERIENCIA / ESTUDIOS
 ===================== */
-#experiencia li, #estudios li {
+/* #experiencia li, #estudios li {
     margin-bottom: 10px;
     line-height: 1.6;
     text-align: center;
@@ -229,7 +229,19 @@ section {
     font-size: 20px;
     color: black;
 }
+                                */
 
+#experiencia ul,
+#estudios ul {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+
+#experiencia li,
+#estudios li {
+    margin-bottom: 15px;
+}
 /* =====================
    FAQ / PREGUNTAS FRECUENTES
 ===================== */
