@@ -7,12 +7,16 @@ html, body {
     padding: 0;
     font-family: system-ui, sans-serif;
 
-text-align: center;
 }
 
 header{
     margin-bottom: 10px;
 }
+
+main{
+text-align: center;
+}
+
 /* =====================
    BODY / BACKGROUND
 ===================== */
