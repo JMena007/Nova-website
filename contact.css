@@ -79,12 +79,14 @@ h2{
   margin-bottom: 15px;
   background: white;
 
-  /* border: 2px solid #4da3ff; /* azul celeste */
+/*
+  /* border: 2px solid #4da3ff;  azul celeste */
   border-radius: 12px;
   padding: 20px;
   background: rgba(77, 163, 255, 0.05); 
   /* azul suave transparente */
-  margin-top: 40px; */
+  margin-top: 40px;
+                               */
 }
 
 /* Título del fieldset */
