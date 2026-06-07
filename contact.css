@@ -73,14 +73,14 @@ h2{
 /* Fieldset con borde celeste */
 .contact-form fieldset {
 
-    border: 1px solid #1e3a8a;
+   border: 1px solid #1e3a8a;
   border-radius: 12px;
   padding: 15px;
   margin-bottom: 15px;
   background: white;
 
 /*
-  /* border: 2px solid #4da3ff;  azul celeste */
+   border: 2px solid #4da3ff;     azul celeste 
   border-radius: 12px;
   padding: 20px;
   background: rgba(77, 163, 255, 0.05); 
