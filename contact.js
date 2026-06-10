@@ -1,6 +1,9 @@
 
 // splash anumation
 window.addEventListener("load", () => {
+
+const return = document.querySelector(".menu-button");
+
   const splash = document.getElementById("splash-contact");
   const contenido = document.getElementById("contenido");
 
