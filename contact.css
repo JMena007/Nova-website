@@ -299,13 +299,13 @@ textarea {
   box-sizing: border-box;        /* evita desbordes raros */
 }
 
-.llamar-link,
-.facebook-link,
-.whats-link,
+.llamar-link:hover,
+.facebook-link:hover,
+.whats-link:hover,
 .github-link:hover{
 
   transform: translateY(-2px);
-  box-shadow: 0 5px 12px rgba(77, 163, 255, 0.4);
+  box-shadow: 0 10px 12px rgba(77, 163, 255, 0.4);
 }
 
 /* Colores individuales */
