@@ -2,10 +2,10 @@
 // splash anumation
 window.addEventListener("load", () => {
 
-const return = document.querySelector(".menu-btn");
+const btnreturn = document.querySelector(".menu-btn");
 
- return.addEventListener("click", () => {
-   return href;
+ btnreturn.addEventListener("click", () => {
+   window.location.href = "index.html";
 });
   const splash = document.getElementById("splash-contact");
   const contenido = document.getElementById("contenido");
