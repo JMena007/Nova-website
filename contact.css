@@ -133,8 +133,6 @@ h2{
   gap: 10px;
   justify-content: center;
   margin-top: 15px;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 12px rgba(77, 163, 255, 0.4);
 }
 
 .form-actions button {
