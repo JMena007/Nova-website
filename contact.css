@@ -297,6 +297,11 @@ textarea {
   text-align: center;
   width: 110px;                  /* 🔹 TODOS del mismo ancho */
   box-sizing: border-box;        /* evita desbordes raros */
+
+/* Animación */
+linear-gradient(135deg, #4da3ff, #7cc0ff);
+  color: #0b1220;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .llamar-link:hover,
@@ -304,7 +309,8 @@ textarea {
 .whats-link:hover,
 .github-link:hover{
 
-  transform: translateY(-5px);
+/* animación */
+  transform: translateY(-2px);
   box-shadow: 0 8px 12px rgba(77, 163, 255, 0.4);
 }
 
