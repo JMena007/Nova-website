@@ -300,7 +300,6 @@ textarea {
 
 /* Animación */
 linear-gradient(135deg, #4da3ff, #7cc0ff);
-  color: #0b1220;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
