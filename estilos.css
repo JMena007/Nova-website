@@ -188,6 +188,10 @@ body {
     color: white;
 }
 
+#lista a:hover{
+   color: #274;
+}
+
 /* =====================
    SECCIONES PRINCIPALES
 ===================== */
