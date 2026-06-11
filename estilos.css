@@ -147,11 +147,6 @@ body {
     padding-top: 60px;
 }
 
-#lista:a hover{
-
-    color: #274;
-}
-
 .close-btn {
     position: center;
     top: 15px;
