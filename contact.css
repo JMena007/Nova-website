@@ -235,12 +235,6 @@ body.fade-in {
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
-
-  transition: transform 0.2s, box-shadow 0.2s;
-
-   /* animación */
-  transform: translateY(-2px);
-  box-shadow: 0 8px 12px rgba(77, 163, 255, 0.4);
 }
 
 /* =====================
