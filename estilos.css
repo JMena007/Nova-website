@@ -258,6 +258,7 @@ details {
   margin-bottom: 15px;
   background: white;
   transition: 0.3s ease;
+cursor: pointer;
 }
 
 /* cuando abre el details, se abre con el texto que hay dentro */
